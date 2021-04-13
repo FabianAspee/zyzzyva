@@ -1,0 +1,65 @@
+﻿<docs>
+	<members name="specresponsesigned">
+		<SpecResponseSigned>
+			<summary>
+				This class rapresent an immutable message that allow save all important information for a response that a replica must create
+				before that this response to client, this message is signed with private key of the replica. 
+			</summary>
+		</SpecResponseSigned>
+		<SpecResponseSignedC>
+			<summary>
+				This constructor create an instance of this class that allow send this message a client in response to request, this constructor is 
+				initial and this allow you can be create a final spec-response-signed with all neccesary information.
+			</summary>
+			<param name="view">This parameter represent the actual view that the system contains.</param>
+			<param name="sequenceNumber">This parameter represent the sequence number that is associated to this response, this sequence number is equal to sequence number in order-req where order-req is a 
+			request.</param>
+			<param name="digestResponse">This parameter represent the digest for this message.</param>
+			<param name="client">This parameter represent the reference to client that the replica must responsea.</param>
+			<param name="timestamp">
+				This parameter represent timestamp that client has inserted inside request message
+				when this has send request message.</param> 
+
+		</SpecResponseSignedC>
+		<SpecResponseSignedC2>
+			<summary>
+				Create an instance of this class that allow send this message a client in response to request.
+			</summary>
+			<param name="old">This parameter represent the old spec response signed.</param>
+			<param name="history">This parameter represent all history that a replica contains.</param>
+		 
+
+		</SpecResponseSignedC2>
+		<View>
+			<summary>
+				This property represent the actual view of the system.
+			</summary>
+		</View>
+		<SequenceNumber>
+			<summary>
+				This property represent the sequence number that the request for this response contains.
+			</summary>
+		</SequenceNumber>
+		<Client>
+			<summary>
+				This property is a reference to actor client that make this request  <see cref="IActorRef"></see>.
+			</summary>
+		</Client>
+		<Timestamp>
+			<summary>
+				This property represent the timestamp that client has inserted inside request message 
+				when this has send request message <see cref="Request{T}"></see>.
+			</summary>
+		</Timestamp>
+		<History>
+			<summary>
+				This property is a <see cref="List{OrderReq}"></see> that contains all <see cref="OrderReq"></see> that this replica has run so far.
+			</summary>
+		</History>
+		<DigestResponse>
+			<summary>
+				This property represent digest for this response, normally is used <see cref="SHA512"></see>.
+			</summary>
+		</DigestResponse>
+</members>
+</docs>

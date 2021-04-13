@@ -1,0 +1,9 @@
+﻿<docs>
+  <members name="irequest">
+    <IPersonaRequest>
+      <summary>
+        Interface that represents a request to the Persona database.
+      </summary>
+    </IPersonaRequest>
+  </members>
+</docs>

@@ -1,0 +1,47 @@
+﻿<docs>
+  <members name="newview">
+    <NewView>
+      <summary>
+        The NewView Message sent by a primary.
+      </summary>
+    </NewView>
+    <View>
+      <summary>
+        The <see cref="int"/> view proposed by the primary in this Message.
+      </summary>
+    </View>
+    <ViewChange>
+      <summary>
+        The <see cref="List{T}"/> of <see cref="ViewChange"/> used by the primary to compute the new history.
+      </summary>
+    </ViewChange>
+    <History>
+      <summary>
+        The <see cref="List{T}"/> of <see cref="OrderReq"/> representing the history computed by the new primary for the new view.
+      </summary>
+    </History>
+    <NewViewMsg>
+      <summary>
+        Creates the NewView message.
+      </summary>
+      <param name="view">
+        <summary>
+          The <see cref="int"/> view of this Message.
+        </summary>
+      </param>
+      <param name="viewChange">
+        <summary>
+          The <see cref="List{T}"/> of <see cref="ViewChange"/> of this message.
+        </summary>
+      </param>
+      <param name="history">
+        <summary>
+          The <see cref="List{T}"/> of <see cref="OrderReq"/>  of this message.
+        </summary>
+      </param>
+      <returns>
+        The NewView message created.
+      </returns>
+    </NewViewMsg>
+  </members>
+</docs>

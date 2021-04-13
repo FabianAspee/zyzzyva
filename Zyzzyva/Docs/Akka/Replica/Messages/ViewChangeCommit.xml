@@ -1,0 +1,31 @@
+﻿<docs>
+	<members name="viewchangecommit">
+		<ViewChangeCommit>
+			<summary>
+				This class rapresent an immutable message that allow comunicate from a replica to another 
+				replicas when this replica commit a view change stage and then this must send view change and proof  at all replicas in the system.
+			</summary>
+		</ViewChangeCommit>
+		<ViewChangeCommitC>
+			<summary>
+				Create an instance of this class that allow send this message at all replicas in the system.
+			</summary>
+			<param name="viewChange">This parameter represent the view change that this replica build before that this send this message to another replicas in the system.</param>
+			<param name="myProof">This parameter represent proof that contains the replica to commit a view change stage,
+			this proof consist of 2f+1 i-hate-the-primary-message <see cref="IHateThePrimary"></see>.</param> 
+
+		</ViewChangeCommitC>
+		<ViewChange>
+			<summary>
+				This property represent an instance of the view change class <see cref="ViewChange.ViewChange"></see> 
+				that this replica build before that this send this message to another replicas in the system.
+			</summary>
+		</ViewChange>
+		<MyProof>
+			<summary>
+				This property is a dictionary that contains 2f+1 i-hate-the-primary-message <see cref="IHateThePrimary"></see>, this dictionary contains unique values.
+			</summary>
+		</MyProof>
+	
+</members>
+</docs>

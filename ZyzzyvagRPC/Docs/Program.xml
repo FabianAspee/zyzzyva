@@ -1,0 +1,29 @@
+﻿<docs>
+	<members name="program">
+		<Program>
+			<summary>
+				This class is call for initialize application.
+			</summary>
+			<remark>
+				<para>You can make in this class:</para>
+				<para>CreateHostBuilder</para>
+			</remark>
+		</Program>
+		<Main>
+			<summary>
+				This method is call when application initialize, and this method call createHostBuilder to create a host.
+			</summary>
+			<param name="args">parameters sent when application inizialize by console</param>
+ 		</Main>
+		<CreateHostBuilder>
+			<summary>
+					This method is call by Main method and create a host for access to application from external.
+			</summary>
+			<param name="args">parameters sent when application inizialize by console</param>
+			<returns>
+				See <see cref="IHostBuilder"></see>
+			</returns>
+		</CreateHostBuilder>
+	
+</members>
+</docs>

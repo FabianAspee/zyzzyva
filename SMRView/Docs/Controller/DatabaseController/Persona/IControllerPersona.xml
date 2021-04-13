@@ -1,0 +1,73 @@
+﻿<docs>
+	<members name="icontrollerpersona">
+		<IControllerPersona>
+			<summary>
+				Interface that define operation that you can do 
+			</summary>
+			<remark>
+				<para>This interface define the next operation:</para>
+				<para>Read</para>
+				<para>ReadAll</para>
+				<para>Insert</para>
+				<para>Update</para>
+				<para>Delete</para>
+			</remark>
+		</IControllerPersona>
+		<Read>
+			<summary>
+				 This method allow call gRPC for obtained an instance of a person if exist.
+			</summary>
+			<param name="id">specifies identificator for a person in database</param>
+			<returns>
+				<see cref="Task"></see>
+			</returns>
+		</Read>
+		<ReadAll>
+		    <summary> 
+				This method allow call gRPC and obtain all person existing into database if exist
+			</summary>
+			<returns>
+				<see cref="Task"></see>
+			</returns>
+		</ReadAll>
+		<Insert>
+			<summary>
+				This method allow call gRPC for insert an instance of a person in database
+			</summary>
+			<param name="persona">Class that represent a message in protocol buffer <see href="https://developers.google.com/protocol-buffers"></see>
+		</param>
+			<returns>
+				<see cref="Task"></see>
+			</returns>
+		</Insert>
+		<Update>
+			<summary>
+				This method allow call gRPC for update an instance of a person in database
+			</summary>
+			<param name="persona">
+				Class that represent a message in protocol buffer <see href="https://developers.google.com/protocol-buffers"></see>
+			</param>
+				<returns>
+				<see cref="Task"></see>
+			</returns>
+		</Update>
+		<Delete>
+			<summary>
+				This method allow call gRPC for delete an instance of a person in database
+			</summary>
+			<param name="id">specifies identificator for a person in database</param>
+			<returns>
+				<see cref="Task"></see>
+			</returns>
+		</Delete>
+		<Byzantine>
+			<summary>
+				This method allow call gRPC for make bizantine replica
+			</summary>
+			<param name="id">id of a replica</param>
+			<returns>
+				<see cref="Task{SetByzantineResponse}"></see>
+			</returns>
+		</Byzantine>
+	</members>
+</docs>

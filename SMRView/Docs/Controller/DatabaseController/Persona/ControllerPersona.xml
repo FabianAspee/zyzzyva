@@ -1,0 +1,32 @@
+﻿<docs>
+	<members name="controllerpersona">
+		<ControllerPersonaC>
+			<summary>
+				Class that implement all operation definied in <see cref="IControllerPersona"></see>
+				and create a conection with the gRPC for to be able make the operation
+			</summary>
+			<remark> 
+			</remark>
+		</ControllerPersonaC> 
+		<ReadResponse>
+			<summary>
+				This event allow you to write the result of the read operation inside texbox.
+			</summary>
+		</ReadResponse>
+		<ReadAllResponses>
+			<summary>
+				This event allow you to write the result of the readall operation inside texbox.
+			</summary>
+		</ReadAllResponses>
+		<GeneralResponses>
+			<summary>
+				This event allow you to write the result of the general operation inside texbox i.e. insert, update and delete.
+			</summary>
+		</GeneralResponses>
+		<ControllerPersona>
+			<summary>
+				This is a costructor of the class that allow you obtain an instance of this class.
+			</summary>
+		</ControllerPersona>
+	</members>
+</docs>

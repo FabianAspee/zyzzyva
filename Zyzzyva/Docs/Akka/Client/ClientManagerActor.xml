@@ -1,0 +1,22 @@
+﻿<docs>
+	<members name="clientmanageractor">
+		<ClientManagerActor>
+			<summary>
+				This class allow you create any client when the system it start, for default any client system will create only 3 children client
+			</summary> 
+		</ClientManagerActor>
+		<ClientManagerActorC>
+			<summary>
+				This costructor allow create an instance for this class.
+			</summary>
+		</ClientManagerActorC>
+		<MyProps>
+			<summary>
+				Static method to create the Client Manager through the Props.
+			</summary> 
+			<returns>The props to create the ClientManager actor.</returns>
+		</MyProps>
+	
+</members>
+</docs>
+

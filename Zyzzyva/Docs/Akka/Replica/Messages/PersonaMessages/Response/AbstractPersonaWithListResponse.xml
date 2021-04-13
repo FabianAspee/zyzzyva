@@ -1,0 +1,36 @@
+﻿<docs>
+  <members name="abstractPersonaWithList">
+    <AbstractPersonaWithListResponse>
+      <summary>
+        Abstraction of a message that contains a response compososed by a <see cref="ImmutableList"/> of <see cref="Persona"/>.
+      </summary>
+    </AbstractPersonaWithListResponse>
+    <Persone>
+      <summary>
+        The result of the operation on the DB.
+      </summary>
+      <returns>
+        The <see cref="ImmutableList"/> of <see cref="Persona"/> that is in the db after the operation.
+      </returns>
+    </Persone>
+    <SuccefulResponse>
+      <summary>
+        The status of operation, true if this operation is completed correctly, false or not .
+      </summary> 
+    </SuccefulResponse>
+    <AbstractPersonaWithListResponseMsg>
+      <summary>
+        Creates the AbstractPersonaWithListResponseMsg message.
+      </summary>
+      <param name="persone">
+        The <see cref="ImmutableList"/> of <see cref="Persona"/> that is in the db after the delete of a persona.
+      </param>
+      <param name="statusOperation">
+        The status of this operation, that can be true or false.
+      </param>
+      <returns>
+        The AbstractPersonaWithListResponseMsg.
+      </returns>
+    </AbstractPersonaWithListResponseMsg>
+  </members>
+</docs>

@@ -1,0 +1,63 @@
+﻿<docs>
+	<members name="databaseservice">
+		<DataBaseService>
+			<summary>
+				this class extend of <see cref="DataBase.DataBaseBase"></see>. that implement all method that contains 
+				database.proto
+			</summary>
+			<remark>
+				<para>You can make in this class:</para>
+				<para>SubscriberWrite</para>
+				<para>SubscriberRead</para> 
+			</remark>
+		</DataBaseService>
+		<DataBaseServiceC>
+			<summary>
+				The constructor is called when the client try to connect in gRPC calling the specific service in this case,  databaseService
+			</summary>
+			<param name="factoryMethod">this parameter we allows initialize the factory that returns specific object in the base of the we request</param>
+			<param name="logger">si consente la registrazione delle informazioni, questo metodo deve essere implementato</param>
+		</DataBaseServiceC>
+		<SubscribeWrite>
+		<summary>
+			this method is called from the client to subscriber to write in stream way the response on the server
+			when you call gRPC for insert, delete or update, then the gRPC inizialite a connection between the client and server
+			in this way all two can, client send the information and the server receive information and vice versa
+
+		</summary>
+		<param name="request">this is a asynstreamreader that allow create a connection between client and server two-way, which allow send information without create a new connection, See <see cref="IAsyncStreamReader{T}"></see> </param>
+		<param name="response">this is a iserverstreamwriter that allow create a connection between client and server two-way, which allow send information without create a new connection, See <see cref="IServerStreamWriter{T}"></see> </param>
+		<param name="context">See <see cref="ServerCallContext"/>
+	</param>
+		<returns>See <see cref="Task"></see></returns>
+		</SubscribeWrite>
+		<SubscribeRead> 
+			<summary>
+				this method is called from the client to subscriber to read in stream way the response on the server
+				when you call gRPC for read or readAll, then the gRPC inizialite a connection between the client and server
+				in this way all two can, the server send information and client receive this and vice versa
+			</summary>
+		<param name="request">this is a asynstreamreader that allow create a connection between client and server two-way, which allow send information without create a new connection, See <see cref="IAsyncStreamReader{T}"></see> </param>
+		<param name="response">this is a iserverstreamwriter that allow create a connection between client and server two-way, which allow send information without create a new connection, See <see cref="IServerStreamWriter{T}"></see> </param>
+		<param name="context">See <see cref="ServerCallContext"/>
+	</param>
+			<returns>
+				See <see cref="Task"></see>
+			</returns>
+		</SubscribeRead>
+		<SetByzantine>
+			<summary>
+				this method is called from the client to make a replica byzantine
+			</summary>
+			<param name="request">
+				This is a protocolbuffer message, that contains a id that allow you make to bizantine a replica 
+			</param> 
+			<param name="context">
+				See <see cref="ServerCallContext"/>
+			</param>
+			<returns>
+				See <see cref="Task{SetByzantineResponse}"></see>
+			</returns>
+		</SetByzantine>
+	</members>
+</docs>

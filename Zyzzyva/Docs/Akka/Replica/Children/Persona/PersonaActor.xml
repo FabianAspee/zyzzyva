@@ -1,0 +1,20 @@
+﻿<docs>
+  <members name="persona">
+    <Persona>
+      <summary>
+        The Actor that manages the persona request in the cluster.
+      </summary>
+    </Persona>
+    <PersonaC>
+      <summary>
+        Creates a persona actor.
+      </summary>
+    </PersonaC>
+    <MyProps>
+      <summary>
+        Static method to create the Persona Actor through the Props.
+      </summary>
+      <returns>The props to create the PersonaActor actor.</returns>
+    </MyProps>
+  </members>
+</docs>

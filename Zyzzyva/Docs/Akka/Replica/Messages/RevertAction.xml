@@ -1,0 +1,11 @@
+﻿<docs>
+  <members name="revert">
+    <RevertAction>
+      <summary>
+        Message sent by a Replica to itself to revert the last action on the
+        Database. It is used to rollback an action appened before a viewchange
+        that is still not commited to the history.
+      </summary>
+    </RevertAction>
+  </members>
+</docs>

@@ -1,0 +1,31 @@
+﻿<docs>
+	<members name="replicaresponse">
+		<ReplicaResponse>
+			<summary>
+				This class is a wrapper that contains all response of all replicas, also this class contains too the final response that the application will see.
+			</summary> 
+		</ReplicaResponse>
+		<ReplicaResponses>
+			<summary>
+				This property is a dictionary that contains the final response of all replicas, this dictionary is compose of int that is the replicaId and T that is the response
+				from a replica.
+			</summary>
+		</ReplicaResponses>
+		<ReplicaResponseC>
+			<summary>
+				This constructor allow you create a instance of this class to save all response and final response to send an application.
+			</summary>
+			<param name="replicaResponses">
+				Dictionary compose of int that is the replicaId and T that is the response
+				from a replica.</param>
+			<param name="response">This parameter represent final response to send an application.</param>
+		</ReplicaResponseC> 
+		<Response>
+			<summary>
+				This property is the final response that send to the application.
+			</summary>
+		</Response>
+
+
+	</members>
+</docs>

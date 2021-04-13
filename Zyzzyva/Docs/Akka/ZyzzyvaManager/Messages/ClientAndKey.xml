@@ -1,0 +1,27 @@
+﻿<docs>
+	<members name="clientandkey">
+		<ClientAndKey>
+			<summary>
+				This class rapresent an immutable message that allow comunicate IActorRef and public key from a client to all replicas.
+			</summary> 
+		</ClientAndKey>
+		<ClientAndKeyC>
+			<summary>
+				Create an instance to this class that allow send instance of a client.
+			</summary>
+			<param name="key">This parameter contains a public key from a client.</param>
+			<param name="actor">This parameter contains a IActorRef from a client.</param>
+
+		</ClientAndKeyC>
+		<PublicKey>
+			<summary>
+				This property contains a public key from a client.
+			</summary>
+		</PublicKey>
+		<ActorRef>
+			<summary>
+				This property contains a IActorRef from a client.
+			</summary>
+		</ActorRef> 
+</members>
+</docs>

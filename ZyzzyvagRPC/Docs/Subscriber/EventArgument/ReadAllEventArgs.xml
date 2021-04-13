@@ -1,0 +1,34 @@
+﻿<docs>
+	<members name="readalleventargs">
+		<ReadAllEventArgs>
+			<summary>
+				this class we allow usea event for a determinate message in this case when read all person in system.
+			</summary>
+		</ReadAllEventArgs>
+		<PersonaResult>
+			<summary>
+				this ImmutableList contains all person in database next to make read all person.
+			</summary>
+
+		</PersonaResult>
+		<ReplicasResult>
+			<summary>
+				this Dictionary contains all response for all replicas in the system.
+			</summary>
+
+		</ReplicasResult>
+		<FinalStatus>
+			<summary>
+				This Property is useful for know the status for this operation.
+			</summary>
+
+		</FinalStatus>
+		<ReadAllEventArgsC>
+			<summary>
+				Constructor that allow save a list of person to send the event <see cref="Persona"/>.
+			</summary>
+			<param name="response"> This parameter represent the result for this operation</param> 
+		</ReadAllEventArgsC>
+
+	</members>
+</docs>

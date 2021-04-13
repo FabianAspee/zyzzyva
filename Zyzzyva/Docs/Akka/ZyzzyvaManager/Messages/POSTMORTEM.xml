@@ -1,0 +1,24 @@
+﻿<docs>
+	<members name="postmortem">
+		<POSTMORTEM>
+			<summary>
+				This class rapresent a immutable message that call replicas when they are dying,
+				this allow the system communicate to the clients, in such a way that, the client delete this replica from their dictionary.
+			</summary>
+			<remark>
+			</remark>
+		</POSTMORTEM>
+		<POSTMORTEMC>
+			<summary>
+				This event allow you to write the result of the read operation inside texbox.
+			</summary>
+			<param name="address">Parameter that indicate which is the address of a replica</param>
+		</POSTMORTEMC>
+		<Address>
+			<summary>
+				This property contains address information of a replica.
+			</summary>
+		</Address>
+		 
+</members>
+</docs>

@@ -1,0 +1,31 @@
+﻿<docs>
+  <members name="updatepersona">
+    <UpdatePersonaResponse>
+      <summary>
+        The Message that contains the response to an update persona request.
+      </summary>
+    </UpdatePersonaResponse>
+    <Persone>
+      <summary>
+        The result of the  update persona computation.
+      </summary>
+      <returns>
+        The <see cref="ImmutableList"/> of <see cref="Persona"/> representing the new set of persons in the db after an update number.
+      </returns>
+    </Persone>
+    <UpdatePersonaRes>
+      <summary>
+        Creates the UpdatePersonaResponse message.
+      </summary>
+      <param name="persone">
+        The <see cref="ImmutableList"/> of <see cref="Persona"/> representing the new set of persons in the db after an update number.
+      </param>
+       <param name="statusOperation">
+        The status of this operation, that can be true or false.
+      </param>
+      <returns>
+        The UpdatePersonaResponse.
+      </returns>
+    </UpdatePersonaRes>
+  </members>
+</docs>

@@ -1,0 +1,33 @@
+﻿<docs>
+	<members name="updateeventargs">
+		<UpdateEventArgs>
+			<summary>
+				this class we allow usea event for a determinate message in this case when update a person.
+			</summary>
+		</UpdateEventArgs>
+		<PersonaResult>
+			<summary>
+				this ImmutableList contains all person in database next to make update.
+			</summary>
+
+		</PersonaResult>
+		<ReplicasResult>
+			<summary>
+				this Dictionary contains all response for all replicas in the system.
+			</summary>
+
+		</ReplicasResult>
+		<FinalStatus>
+			<summary>
+				This Property is useful for know the status for this operation.
+			</summary>
+
+		</FinalStatus>
+		<UpdateEventArgsC>
+			<summary>
+				Constructor that allow save a list of person to send the event <see cref="Persona"/>.
+			</summary>
+			<param name="response"> This parameter represent the result for this operation</param> 
+		</UpdateEventArgsC> 
+</members>
+</docs>

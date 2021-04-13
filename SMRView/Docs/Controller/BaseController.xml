@@ -1,0 +1,26 @@
+﻿<docs>
+	<members name="basecontroller">
+		<BaseController>
+			<summary>
+				Abstract Class that create the variable common between different controller
+				<para>
+					<see cref="CancellationToken"/> </para>
+				<para>
+					<see cref="GrpcChannel"/>
+				</para>
+			</summary>
+			<remark>
+			</remark>
+		</BaseController>
+		<_cancellationTokenSource>
+			<summary>
+				This variable is used to unsubscriber in the channel when the application is closed
+			</summary>
+		</_cancellationTokenSource>
+		<channel>
+			<summary>
+				This variable return a new channel from view to gRPC
+			</summary>
+		</channel>
+	</members>
+</docs>

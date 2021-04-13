@@ -1,0 +1,27 @@
+﻿<docs>
+  <members name="snapshotreply">
+    <SnapshotReply>
+      <summary>
+        Message that contains the snapshot of the internal state of a replica DB.
+        It is sent to a replica that asked for it during a view change.
+      </summary>
+    </SnapshotReply>
+    <StreamReader>
+      <summary>
+        <see cref="Dictionary{T,T}"/> with <see cref="int"/> as key and <see cref="Persona"/> as value representing the Snapshot of the replica state. 
+      </summary>
+    </StreamReader>
+    <SnapshotReplyMsg>
+      <summary>
+        Creates the SnapshotReply message.
+      </summary>
+      <param name="streamReader">
+        <see cref="Dictionary{T,T}"/> with <see cref="int"/> as key and <see cref="Persona"/> as value  representing the Snapshot of the replica state.
+      </param>
+      <returns>
+        The created SnapshotReply message.
+      </returns>
+    </SnapshotReplyMsg>
+  </members>
+</docs>
+

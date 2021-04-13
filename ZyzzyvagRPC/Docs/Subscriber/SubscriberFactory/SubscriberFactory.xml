@@ -1,0 +1,12 @@
+﻿<docs>
+	<members name="subscriberfactory">
+		<SubscriberFactory>
+			<summary>
+				this is a Factory that allow instance object tha contains method to call actors cluster.
+			  <para>with this class you can create:</para>
+ì			  <para>with this class you can create PersonaSubscriber<see cref="GetPersonSubscriber()"/>.</para>		
+			</summary> 
+		</SubscriberFactory>
+		 
+	</members>
+</docs>

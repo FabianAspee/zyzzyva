@@ -1,0 +1,57 @@
+﻿<docs>
+  <members name="checkpoint">
+    <Checkpoint>
+      <summary>
+        The Message that contains the Checkpoint.
+      </summary>
+    </Checkpoint>
+    <SequenceNumber>
+      <summary>
+        The <see cref="int"/> sequence number of the checkpoint that the replica is trying to do.
+      </summary>
+      <returns>
+        The <see cref="int"/> sequence number of the checkpoint.
+      </returns>
+    </SequenceNumber>
+    <DigestHistory>
+      <summary>
+        The <see cref="string"/> digest of the history of the replica up to the sequence number proposed.
+      </summary>
+      <returns>
+        The <see cref="string"/> digest of the history.
+      </returns>
+    </DigestHistory>
+    <ReplicaId>
+      <summary>
+        The <see cref="int"/> id of the replica that sent this message.
+      </summary>
+      <returns>
+        The <see cref="int"/> sequence number of the checkpoint.
+      </returns>
+    </ReplicaId>
+    <Signature>
+      <summary>
+        The signature of this message, signed with the private key of the replica that sent this message
+      </summary>
+      <returns>The signature of this message</returns>
+    </Signature>
+    <CheckpointMsg>
+      <summary>
+        Creates the Checkpoint message.
+      </summary>
+      <param name="sequenceNumber">
+        The <see cref="int"/> sequence number of this checkpoint.
+      </param>
+      <param name="digestHistory">
+        The <see cref="int"/> digest of this checkpoint.
+      </param>
+      <param name="myId">
+        The <see cref="int"/> replica that sent this message.
+      </param>
+      <returns>
+        The Checkpoint message.
+      </returns>
+    </CheckpointMsg>
+
+</members>
+</docs>

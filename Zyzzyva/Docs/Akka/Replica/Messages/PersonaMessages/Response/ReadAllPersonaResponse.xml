@@ -1,0 +1,32 @@
+﻿<docs>
+  <members name="readpersona">
+    <ReadAllPersonaResponse>
+      <summary>
+        The Message that contains the response to a read all persona request.
+      </summary>
+    </ReadAllPersonaResponse>
+    <Persone>
+      <summary>
+        The result of the read all persona computation.
+      </summary>
+      <returns>
+        The <see cref="ImmutableList"/> of <see cref="Persona"/> that is the result of a read all persona operation.
+      </returns>
+    </Persone>
+    <ReadAllPersonaResp>
+      <summary>
+        Creates the UpdatePersonaResponse message.
+      </summary>
+      <param name="persone">
+        The <see cref="ImmutableList"/> of <see cref="Persona"/> that is the result of a read all persona operation.
+      </param>
+       <param name="statusOperation">
+        The status of this operation, that can be true or false.
+      </param>
+      <returns>
+        The ReadAllPersonaResponse.
+      </returns>
+    </ReadAllPersonaResp>
+  
+</members>
+</docs>

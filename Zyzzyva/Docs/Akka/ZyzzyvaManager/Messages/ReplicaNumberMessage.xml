@@ -1,0 +1,30 @@
+﻿<docs>
+	<members name="replicanumbermessage">
+		<ReplicaNumberMessage>
+			<summary>
+				This class represent an immutable message that allow you send a messageto the replicas when this is ready, this class is call when all replicas are ready and
+				when a new replica is arrived.
+			</summary>
+			<remark>
+			</remark>
+		</ReplicaNumberMessage>
+		<ReplicaNumberMessageC>
+			<summary>
+				This costructor allow you create an instance of this class.
+			</summary>
+			<param name="id">Parameter that represent actual id to replica</param>
+			<param name="view">Parameter that represent actual view in the system</param>
+		</ReplicaNumberMessageC>
+		<Id>
+			<summary>
+				This event allow you to write the result of the readall operation inside texbox.
+			</summary>
+		</Id>
+		<View>
+			<summary>
+				This event allow you to write the result of the general operation inside texbox i.e. insert, update and delete.
+			</summary>
+		</View> 
+	
+</members>
+</docs>

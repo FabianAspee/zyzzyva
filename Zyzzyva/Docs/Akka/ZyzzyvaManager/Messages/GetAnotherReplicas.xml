@@ -1,0 +1,9 @@
+﻿<docs>
+	<members name="getanotherreplicas">
+		<GetAnotherReplicas>
+			<summary>
+				Class that allow send information when a new replica arrived inside system.
+			</summary> 
+		</GetAnotherReplicas> 
+	</members>
+</docs>

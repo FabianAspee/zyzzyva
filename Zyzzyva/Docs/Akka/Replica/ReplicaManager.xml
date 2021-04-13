@@ -1,0 +1,25 @@
+﻿<docs>
+	<members name="replicamanager">
+		<ReplicaManager>
+			<summary> 
+				This class allow you create a replica manager actor, this class contains all behaviour either replica managet and replica manager primary, when an actor dead while working with the 
+				request, this class comunicate to <see cref="ZyzzyvaManager"></see>their death, in this way, the ZyzzyvaManager
+				will communicate with all replicas and client to communicate this death.
+			</summary>
+		</ReplicaManager>
+		<ReplicaManagerC>
+			<summary>
+				This costructor allow create an instance for this class and set all receive that this actor will have.
+			</summary>
+		</ReplicaManagerC>
+		<MyProps>
+			<summary>
+				Static method to create the replica Manager through the Props.
+			</summary>
+			<returns>The props to create the ReplicaManager actor.</returns>
+		</MyProps>
+
+	
+</members>
+</docs>
+

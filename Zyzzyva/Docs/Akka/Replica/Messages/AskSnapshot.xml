@@ -1,0 +1,9 @@
+﻿<docs>
+  <members name="snapshot">
+    <AskSnapshot>
+      <summary>
+        The Message used by a replica to ask to another replica for a snapshot of his database.
+      </summary>
+    </AskSnapshot>
+  </members>
+</docs>

@@ -1,0 +1,29 @@
+﻿<docs>
+  <members name="delete">
+    <DeletePersona>
+      <summary>
+        The Message that contains the request to delete a persona in the db.
+      </summary>
+    </DeletePersona>
+    <Persona>
+      <summary>
+        The <see cref="int"/> id of the persona to delete.
+      </summary>
+      <returns>
+        The <see cref="int"/> id of the persona to update.
+      </returns>
+    </Persona>
+    <DeletePersonaMsg>
+      <summary>
+        Creates the DeletePersona message.
+      </summary>
+      <param name="id">
+        The <see cref="int"/> persona to delete.
+      </param>
+      <returns>
+        The DeletePersona message.
+      </returns>
+    </DeletePersonaMsg>
+
+  </members>
+</docs>

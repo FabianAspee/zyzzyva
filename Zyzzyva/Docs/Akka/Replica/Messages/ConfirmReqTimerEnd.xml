@@ -1,0 +1,9 @@
+﻿<docs>
+  <members name="confirmreqtimerend">
+    <ConfirmReqTimerEnd>
+      <summary>
+        The Message send from a replica to itself when the timer for the ConfrimReq expires .
+      </summary>
+    </ConfirmReqTimerEnd>
+  </members>
+</docs>

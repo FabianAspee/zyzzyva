@@ -1,0 +1,26 @@
+﻿<docs>
+	<members name="deconstructlist">
+		<DeconstructList>
+			<summary>
+				this class is a extension method that allow create specific method for example decostruct of a list, that allow you use pattern matching (head, tail)
+			</summary>
+
+		</DeconstructList>
+		<Deconstruct>
+			<summary>
+				allow create a tuple respost from a list <see cref="List{T}"></see>, example (head,tail).
+			</summary>
+			<param name="list">This is the parameter that we want applies deconstruct for use head and tail</param>
+			<param name="head">This is head of the list that applies deconstruct</param>
+			<param name="tail">This is a tail of the list that applies deconstruct</param>
+		</Deconstruct>
+		<Deconstruct2>
+			<summary>
+				allow create a tuple respost from a <see cref="IEnumerable{T}"></see>, example (head,tail).
+			</summary>
+			<param name="list">This is the parameter that we want applies deconstruct for use head and tail</param>
+			<param name="head">This is head of the IEnumerable that applies deconstruct</param>
+			<param name="tail">This is a tail of the IEnumerable that applies deconstruct</param>
+		</Deconstruct2> 
+</members>
+</docs>

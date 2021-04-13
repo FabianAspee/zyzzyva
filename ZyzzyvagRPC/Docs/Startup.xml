@@ -1,0 +1,26 @@
+﻿<docs>
+	<members name="startup">
+		<Startup>
+			<summary>
+				This class create configuration for gRPC services.
+			</summary>
+			<remark>
+				<para>You can make in this class:</para>
+				<para>ConfigureServices</para>
+				<para>Configure</para>
+			</remark>
+		</Startup>
+		<ConfigureServices>
+			<summary>
+				 This method gets called by the runtime. Use this method to add services to the container.
+				  For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+			</summary>
+			<param name="services">soecifies the contract for a collection of services descriptor</param>
+		</ConfigureServices>
+		<Configure>
+			<summary>
+				This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+			</summary> 
+		</Configure> 
+	</members>
+</docs>

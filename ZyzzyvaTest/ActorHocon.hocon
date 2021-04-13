@@ -1,0 +1,93 @@
+﻿
+akka {
+	# Replace the default value, ["Akka.Event.DefaultLogger"], with TestEventListener
+	# This logger behaves exactly like DefaultLogger, but makes it possible
+	# to use EventFiltering. If no filter is specified it logs to StdOut just like
+	# DefaultLogger.
+  loggers = ["Akka.TestKit.TestEventListener, Akka.TestKit"]
+  test {
+    # factor by which to scale timeouts during tests, e.g. to account for shared
+    # build system load
+    timefactor =  1.0
+
+    # duration of EventFilter.intercept waits after the block is finished until
+    # all required messages are received
+    filter-leeway = 3s
+
+    # duration to wait in expectMsg and friends outside of within() block
+    # by default
+    single-expect-default = 3s
+
+    # The timeout that is added as an implicit by DefaultTimeout trait 
+    # This is used for Ask-pattern
+    default-timeout = 5s
+
+    calling-thread-dispatcher {
+      type = "Akka.TestKit.CallingThreadDispatcherConfigurator, Akka.TestKit"
+      throughput = 2147483647
+    }
+
+    test-actor.dispatcher {
+      type = "Akka.TestKit.CallingThreadDispatcherConfigurator, Akka.TestKit"
+      throughput = 2147483647
+    }
+
+    # Disable batching in order to prevent flakiness with Akka.Remote tests (since they have low message frequency)
+    remote.dot-netty.tcp.batching.enabled = false
+  }
+  actor {
+      
+      deployment {
+         /client_manager/zyzzyvaRouter {
+            router = round-robin-group
+            routees.paths = ["/user/zyzzyva_manager"]
+            cluster {
+               enabled = on
+               allow-local-routees = on
+            }
+         }
+         /replica_manager/zyzzyvaRouter {
+            router = broadcast-group
+            routees.paths = ["/user/zyzzyva_manager"]
+            cluster {
+               enabled = on
+               allow-local-routees = on
+            }
+         }
+          /zyzzyva_manager/replicaRouter {
+            router = broadcast-group
+            routees.paths = ["/user/replica_manager"]
+            cluster {
+               enabled = on
+               allow-local-routees = on
+            }
+         }
+          /zyzzyva_manager/clientRouter {
+            router = broadcast-group
+            routees.paths =  ["/user/client_manager/client0","/user/client_manager/client1","/user/client_manager/client2"]
+            cluster {
+               enabled = on
+               allow-local-routees = on
+            }
+         }
+          /client_manager/clientRouter {
+            router =round-robin-group
+            routees.paths = ["/user/client_manager/client0","/user/client_manager/client1","/user/client_manager/client2"]
+            cluster {
+               enabled = on
+               allow-local-routees = on
+            }
+         }
+         /test/clientRouter {
+            router =round-robin-group
+            routees.paths = ["/user/client_manager/client0","/user/client_manager/client1","/user/client_manager/client2"]
+            cluster {
+               enabled = on
+               allow-local-routees = on
+            }
+         }
+      }
+   } 
+   }
+}
+ 

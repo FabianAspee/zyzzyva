@@ -1,0 +1,34 @@
+﻿<docs>
+	<members name="deleteeventargs">
+		<DeleteEventArgs>
+			<summary>
+				This class we allow usea event for a determinate message in this case when delete a person.
+			</summary> 
+		</DeleteEventArgs>
+		<PersonaResult>
+			<summary>
+				This ImmutableList contains all person in database next to make delete.
+			</summary>
+
+		</PersonaResult>
+		<ReplicasResult>
+			<summary>
+				This Dictionary contains all response for all replicas in the system.
+			</summary>
+
+		</ReplicasResult>
+		<FinalStatus>
+			<summary>
+				This Property is useful for know the status for this operation.
+			</summary>
+
+		</FinalStatus>
+		<DeleteEventArgsC>
+			<summary>
+				Constructor that allow save a list of person to send the event <see cref="Persona"/>.
+			</summary>
+			<param name="response"> This parameter represent the result for this operation</param> 
+		</DeleteEventArgsC>
+		
+	</members>
+</docs>

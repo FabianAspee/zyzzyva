@@ -1,0 +1,32 @@
+﻿<docs>
+  <members name="clusterlistener">
+    <ClusterListener>
+      <summary>
+        The actor that log the event in the cluster, e.g. when a node joins the cluster, leaves the cluster etc.
+      </summary>
+    </ClusterListener>
+	  <ClusterListenerC>
+		  <summary>
+			  This costructor allow you create an instance for this class, in this case this costructor allow you defined a receive to this actor.
+		  </summary>
+	  </ClusterListenerC>
+    <PreStart>
+      <summary>
+        Overrides the PreStart method of <see cref="ReceiveActor"/>". Before starting the actor, subscribes to the cluster to listen to.
+      </summary>
+    </PreStart>
+    <PostStop>
+      <summary>
+        Overrides the PostStop method of <see cref="ReceiveActor"/>". Afetr stopping the actor, unsubscribes from the cluster to listen to.
+      </summary>
+    </PostStop>
+    <MyProps>
+      <summary>
+        Static method to create the ClusterListener Actor through the Props.
+      </summary>
+      <param name="zyzzyvaManager">IActorRef that identified an actor</param>
+      <param name="cluster">The cluster to observe.</param>
+      <returns>The props to create the member actor.</returns>
+    </MyProps>
+  </members>
+</docs>

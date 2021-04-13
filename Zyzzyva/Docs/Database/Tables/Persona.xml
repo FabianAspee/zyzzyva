@@ -1,0 +1,63 @@
+﻿<docs>
+  <members name="persona">
+    <Persona>
+      <summary>
+        The Representation of a person in the database.
+      </summary>
+      <remarks>
+        A database based representation of a person in the system.
+      </remarks>
+    </Persona>
+    <PersonaConstructor>
+      <summary>
+        Constructor method to create a new Persona object.
+      </summary>
+      <param name="id">The id of the Persona.</param>
+      <param name="nome">The name of Persona.</param>
+      <param name="cognome">The surname of the Persona.</param>
+      <param name="eta">The age of the Persona.</param>
+      <param name="haMacchina">The value of the haMacchina attribute of the Persona.</param>
+      <returns>The Persona.</returns>
+    </PersonaConstructor>
+    <Id>
+      <summary>
+        The <see cref="int"/> id of the Persona.
+      </summary>
+      <returns>
+        The <see cref="int"/> id of the Persona.
+      </returns>
+    </Id>
+    <Nome>
+      <summary>
+        The <see cref="string"/> name of the Persona.
+      </summary>
+      <returns>
+        The <see cref="string"/> name of the Persona.
+      </returns>
+    </Nome>
+    <Cognome>
+      <summary>
+        The <see cref="string"/> surnname of the Persona.
+      </summary>
+      <returns>
+        The <see cref="string"/> surname of the Persona.
+      </returns>
+    </Cognome>
+    <Eta>
+      <summary>
+        The <see cref="int"/> age of the Persona.
+      </summary>
+      <returns>
+        The <see cref="int"/> age of the Persona.
+      </returns>
+    </Eta>
+    <HasCar>
+      <summary>
+        The <see cref="bool"/> representation of either the Persona has a car or not.
+      </summary>
+      <returns>
+        The <see cref="bool"/> representation of either the Persona has a car or not.
+      </returns>
+    </HasCar>
+  </members>
+</docs>

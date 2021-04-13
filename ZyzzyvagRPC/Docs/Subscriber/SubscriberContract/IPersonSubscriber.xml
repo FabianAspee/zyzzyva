@@ -1,0 +1,79 @@
+﻿<docs>
+	<members name="ipersonasubscriber">
+		<IPersonSubscriber>
+			<summary>
+				Interface that show method that can call from PersonaSubscriber.
+			</summary>
+			<remarks>
+				can Read, ReadAll, Insert, Update, Delete.
+			</remarks>
+		</IPersonSubscriber>
+		<ReadEvent>
+			<summary>
+				Event that allow you send data when operation read is complete.
+			</summary>
+		</ReadEvent>
+		<ReadAllEvent>
+			<summary>
+				Event that allow you send data when operation readall is complete.
+			</summary>
+		</ReadAllEvent>
+		<InsertEvent>
+			<summary>
+				Event that allow you send data when operation insert is complete.
+			</summary>
+		</InsertEvent>
+		<UpdateEvent>
+			<summary>
+				Event that allow you send data when operation update is complete.
+			</summary>
+		</UpdateEvent>
+		<DeleteEvent>
+			<summary>
+				Event that allow you send data when operation delete is complete.
+			</summary>
+		</DeleteEvent>
+		<SetByzantineEvent>
+			<summary>
+				Event that allow you send data when operation byzantine is complete>.
+			</summary>
+		</SetByzantineEvent>
+		<Read>
+			<summary>
+				send id of a person and read all information fort this person.
+			</summary>
+			<param name="id">id that represent a person into db for read</param>
+		</Read>
+		
+		<ReadAll>
+			<summary>
+				call server asking the all people in the registry.
+			</summary>
+		</ReadAll>
+		<Insert>
+			<summary>
+				call server actor to insert a people registry into db.
+			</summary>
+			<param name="persona">persona that we want add into db</param>
+		</Insert>
+		<Update>
+			<summary>
+				call server to update a registry in db.
+			</summary>
+			<param name="persona">persona that contains information for specific person into db</param>
+		</Update>
+		<Delete>
+			<summary>
+				call db to delete registry in db.
+			</summary>
+			<param name="id">id that represent a person into db</param>
+		</Delete>
+		<SetByzantine>
+			<summary>
+				call to db to make byzantine a replica. 
+			</summary>
+			<param name="id">id that represent a replica</param>
+		</SetByzantine>
+
+</members>
+</docs>

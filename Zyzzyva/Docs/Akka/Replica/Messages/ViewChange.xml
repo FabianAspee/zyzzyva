@@ -1,0 +1,52 @@
+﻿<docs>
+	<members name="viewchange">
+		<ViewChange>
+			<summary>
+				This class rapresent an immutable message that allow comunicate from a replica to another
+				replicas when this replica commit a view change stage and then this must send view change at all replicas in the system.
+			</summary>
+		</ViewChange>
+		<ViewChangeC>
+			<summary>
+				Create an instance of this class that allow send this message at all replicas in the system.
+			</summary>
+			<param name="newView">This parameter represent the new view that the system will must adopt.</param>
+			<param name="sequenceNumber">This parameter represent the last sequence number that this replica has executed.</param>
+			<param name="checkPointProof">This parameter represent the last checkpoint that contains this replica.</param>
+			<param name="commitCertificate">This parameter represent last commit-certificate that contains this replica.</param>
+			<param name="history">This parameter represent all history that a replica contains.</param>
+			<param name="replicaId">This parameter represent the identificator of a replica.</param>
+
+		</ViewChangeC>
+		<NewView>
+			<summary>
+				This property represent the new view that the system will must adopt.
+			</summary>
+		</NewView>
+		<SequenceNumber>
+			<summary>
+				This property represent the last sequence number that this replica has executed.
+			</summary>
+		</SequenceNumber>
+		<CheckPointProof>
+			<summary>
+				This property is an instance of the last  <see cref="Checkpoint"></see> that this replica has save.
+			</summary>
+		</CheckPointProof>
+		<CommitCertificate>
+			<summary>
+				This property is an instance of the last  <see cref="CommitCertificate"></see> that this replica has save.
+			</summary>
+		</CommitCertificate>
+		<History>
+			<summary>
+				This property is a <see cref="List{OrderReq}"></see> that contains all <see cref="OrderReq"></see> that this replica has run so far.
+			</summary>
+		</History>
+		<ReplicaId>
+			<summary>
+				This property represent an identified of a replica.
+			</summary>
+		</ReplicaId>
+</members>
+</docs>

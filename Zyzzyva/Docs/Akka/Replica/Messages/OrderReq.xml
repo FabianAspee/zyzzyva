@@ -1,0 +1,67 @@
+﻿<docs>
+  <members name="orderreq">
+    <OrderReq>
+      <summary>
+        The OrderReq Message sent by a primary.
+      </summary>
+    </OrderReq>
+    <OrderReqSigned>
+      <summary>
+        The <see cref="OrderReqSigned"/> of this OrderReq message.
+      </summary>
+    </OrderReqSigned>
+    <OrderReqMsg>
+      <summary>
+        Creates the OrderReq message.
+      </summary>
+      <param name="orderReqSigned">
+        <summary>
+          The <see cref="OrderReqSigned"/> of this Message.
+        </summary>
+      </param>
+      <param name="signature">
+        <summary>
+          The signature of the OrderReqSigned in this message.
+          It is signed with the private key of the Primary.
+        </summary>
+      </param>
+      <returns>
+        The OrderReq message created.
+      </returns>
+    </OrderReqMsg>
+    <OrderReqT>
+      <summary>
+        The generic OrderReq Message sent by a primary. It has the associated <see cref="IRequest"/> interally.
+      </summary>
+    </OrderReqT>
+    <IRequest>
+      <summary>
+        The <see cref="IRequest{T}"/> of this OrderReq.
+      </summary>
+    </IRequest>
+    <OrderReqMsgT>
+      <summary>
+        Creates the generic OrderReq message.
+      </summary>
+      <param name="orderReq">
+        <summary>
+          The <see cref="OrderReqSigned"/> of this Message.
+        </summary>
+      </param>
+      <param name="request">
+        <summary>
+          The <see cref="IRequest{T}"/> of this Message.
+        </summary>
+      </param>
+      <param name="signature">
+        <summary>
+          The signature of the OrderReqSigned in this message.
+          It is signed with the private key of the Primary.
+        </summary>
+      </param>
+      <returns>
+        The OrderReq message created.
+      </returns>
+    </OrderReqMsgT>
+</members>
+</docs>

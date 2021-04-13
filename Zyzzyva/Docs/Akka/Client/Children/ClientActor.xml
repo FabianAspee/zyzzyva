@@ -1,0 +1,24 @@
+﻿<docs>
+	<members name="clientactor">
+		<ClientActor>
+			<summary>
+				this class will management all request that receive from application, the application is any thing that can call this client from the outside
+			</summary>
+			 
+		</ClientActor>
+		<ClientActorC>
+			<summary>
+				This costructor allow create an instance for this class.
+			</summary>
+		</ClientActorC>
+		<MyProps>
+			<summary>
+				Static method to create the Client through the Props.
+			</summary>
+			<returns>The props to create the Client actor.</returns>
+		</MyProps>
+
+	
+</members>
+</docs>
+

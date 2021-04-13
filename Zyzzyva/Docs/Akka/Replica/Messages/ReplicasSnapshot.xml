@@ -1,0 +1,29 @@
+﻿<docs>
+  <members name="replicassnapshot">
+    <ReplicasSnapshot>
+      <summary>
+        The ReplicasSnapshot Message is sent by a replica to itself after a timer expires to tell to iteself the list of 
+        replica where it can find the snapshot for a viewchange.
+      </summary>
+    </ReplicasSnapshot>
+    <ReplicasId>
+      <summary>
+        The <see cref="List{T}"/> of <see cref="int"/> of the replicas that have a good snapshot for a view change.
+      </summary>
+    </ReplicasId>
+    <ReplicasSnapshotMsg>
+      <summary>
+        Creates the ReplicasSnapshot message.
+      </summary>
+      <param name="replicasId">
+        <summary>
+          The <see cref="List{T}"/> of <see cref="int"/> of replica id of this message.
+        </summary>
+      </param>
+      <returns>
+        The ReplicasSnapshot message created.
+      </returns>
+    </ReplicasSnapshotMsg>
+  
+</members>
+</docs>

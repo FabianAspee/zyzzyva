@@ -1,0 +1,36 @@
+﻿<docs>
+	<members name="clusterclientccess">
+		<ClusterClientAccess>
+			<summary>
+				this class allow you create and kill actor in system, this class is a singleton, it means that this class is only one instance in the system.
+			</summary>
+			<remark>
+				<para>You can make in this class:</para>
+				<para>CreateActor</para>
+				<para>KillActor</para> 
+			</remark>
+		</ClusterClientAccess> 
+		<Instance>
+			<summary>
+				This property allow you, obtain an instance of the class, this instance don't is a new instance, because this is a singleton.
+			</summary>
+			<returns>
+				<see cref="ClusterClientAccess"></see>
+			</returns>
+		</Instance>
+		<CreateActor>
+			<summary>
+				This method allow you create actor when you need, it util when the gRPC need manage high quantity of request from client.
+			</summary>
+			<returns>
+				<see cref="IActorRef"></see>
+			</returns>
+		</CreateActor>
+		<KillActor>
+			<summary>
+				This method allow you killactor when is neccesary, this allow avoiding overhead the system with actor that do nothing.
+			</summary>
+			 
+		</KillActor>
+	</members>
+</docs>

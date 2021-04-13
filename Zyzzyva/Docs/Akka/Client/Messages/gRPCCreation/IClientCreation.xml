@@ -1,0 +1,16 @@
+﻿<docs>
+	<members name="iclientcreation">
+		<IClientCreation>
+			<summary>
+				this interface contains a reference of the IActorRef, this property is a general property that is use by client actor and replicas
+			</summary>
+
+		</IClientCreation>
+		<Actor>
+			<summary>
+				This property is a IActorRef, this property allow you save the reference of a actor in the system
+			</summary> 
+		</Actor> 
+	
+</members>
+</docs>

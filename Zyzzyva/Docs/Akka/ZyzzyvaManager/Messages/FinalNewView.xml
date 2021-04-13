@@ -1,0 +1,23 @@
+﻿<docs>
+	<members name="finalnewview">
+		<FinalNewView>
+			<summary>
+				Class that represents an immutable message that communicates from a replica to zyzzyvamanager what the new view is.
+			</summary>
+			<remark>
+			</remark>
+		</FinalNewView>
+		<View>
+			<summary>
+				Int that represent the new view
+			</summary>
+		</View>
+		<FinalNewViewC>
+			<summary>
+				Costructor that allow create an instance of this messages. 
+			</summary>
+			<param name="view">New view in the system</param>
+		</FinalNewViewC>
+		 
+</members>
+</docs>

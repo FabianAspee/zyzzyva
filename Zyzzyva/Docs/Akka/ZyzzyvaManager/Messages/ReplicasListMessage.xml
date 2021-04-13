@@ -1,0 +1,30 @@
+﻿<docs>
+	<members name="replicaslistmessage">
+		<ReplicasListMessage>
+			<summary>
+				This class rapresent an immutable message that contains all information of all replicas in the system,
+				this class is send when system is started and when new replicas arrived
+			</summary>
+			<remark>
+			</remark>
+		</ReplicasListMessage>
+		<ReplicasListMessageC>
+			<summary>
+				This costructor allow you create an instance of this class .
+			</summary>
+			<param name="replicas">Parameters that represent all replicas in the system</param>
+			<param name="maxFailures">Max failure that can exist in the system</param>
+		</ReplicasListMessageC>
+		<MaxFailures>
+			<summary>
+				Property that represent max failures that system can have.
+			</summary>
+		</MaxFailures>
+		<Replicas>
+			<summary>
+				This property represent all replicas in the system, this is a tuple that contains IActorRef of the replicas, PublicKey of the replicas and id of the replicas
+			</summary>
+		</Replicas>
+
+	</members>
+</docs>

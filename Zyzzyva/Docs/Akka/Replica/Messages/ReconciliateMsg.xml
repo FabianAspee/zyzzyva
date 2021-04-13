@@ -1,0 +1,10 @@
+﻿<docs>
+  <members name="reconciliate">
+    <ReconciliateMsg>
+      <summary>
+        The Message sent from a replica to itself in the reconciliation status. It is used to 
+        tell to a replica that it can start the reconciliation.
+      </summary>
+    </ReconciliateMsg>
+  </members>
+</docs>

@@ -1,0 +1,29 @@
+﻿<docs>
+	<members name="readeventargs">
+		<ReadAllEventArgs>
+			<summary>
+				this class we allow usea event for a determinate message in this case when read a person in system.
+			</summary>
+		</ReadAllEventArgs>
+		<PersonaResult>
+			<summary>
+				this IMmutableList contains a person in database next to make read person.
+			</summary>
+
+		</PersonaResult>
+		<ReplicasResult>
+			<summary>
+				this Dictionary contains all response for all replicas in the system.
+			</summary>
+
+		</ReplicasResult>
+		<ReadAllEventArgsC>
+			<summary>
+				Constructor that allow read all persons to send the event <see cref="Persona"/>.
+			</summary>
+			<param name="dictionaries"> A dictionary that contains responses of the all replcias</param>
+			<param name="personas"> A list with all instance of the person that exist in database next operation delete</param>
+		</ReadAllEventArgsC>
+		 
+	</members>
+</docs>

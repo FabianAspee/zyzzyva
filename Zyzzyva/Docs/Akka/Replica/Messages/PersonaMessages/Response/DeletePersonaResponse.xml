@@ -1,0 +1,31 @@
+﻿<docs>
+  <members name="deletepersona">
+    <DeletePersonaResponse>
+      <summary>
+        The Message that contains the response to a delete persona request.
+      </summary>
+    </DeletePersonaResponse>
+    <Persone>
+      <summary>
+        The result of the delete persona operation.
+      </summary>
+      <returns>
+        The <see cref="ImmutableList"/> of <see cref="Persona"/> that is in the db after the delete of a persona.
+      </returns>
+    </Persone>
+    <DeletePersonaResp>
+      <summary>
+        Creates the InsertPersonaResponse message.
+      </summary>
+      <param name="persone">
+        The <see cref="ImmutableList"/> of <see cref="Persona"/> that is in the db after the delete of a persona.
+      </param>
+       <param name="statusOperation">
+        The status of this operation, that can be true or false.
+      </param>
+      <returns>
+        The InsertPersonaResponse.
+      </returns>
+    </DeletePersonaResp>
+  </members>
+</docs>

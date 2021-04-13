@@ -1,0 +1,32 @@
+﻿<docs>
+  <members name="irequest">
+    <IRequest>
+      <summary>
+        Interface that models the Request from the client.
+      </summary>
+    </IRequest>
+    <Client>
+      <summary>
+        The <see cref="IActorRef"/> of client that sent the request.
+      </summary>
+    </Client>
+    <Timestamp>
+      <summary>
+        The <see cref="int"/> timestamp of the request.
+      </summary>
+    </Timestamp>
+    <IRequestT>
+      <summary>
+        Generic request used to manage different types of requests.
+      </summary>
+    </IRequestT>
+    <GetRequest>
+      <summary>
+        Method that returns the internal request of the IReqeuest.
+      </summary>
+      <returns>
+        The generic Request contained in this IReqeuest.
+      </returns>
+    </GetRequest>
+</members>
+</docs>

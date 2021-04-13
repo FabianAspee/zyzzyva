@@ -1,0 +1,22 @@
+﻿<docs>
+	<members name="viewchangetimerend">
+		<ViewChangeTimerEnd>
+			<summary>
+				This class rapresent an immutable message that allow comunicate that a replica is uncomfortably with actual behaviour of the primary replica.
+			</summary>
+		</ViewChangeTimerEnd>
+		<ViewChangeTimerEndC>
+			<summary>
+				Create an instance of this class that allow self-sending this message when happens timeout in the view change stage.
+			</summary>
+			<param name="view">This parameter represent the actual view in the wich happens timeout.</param>
+
+		</ViewChangeTimerEndC>
+		<View>
+			<summary>
+				The <see cref="int"/> view number in wich the replica sent this view-change-timer-end message.
+			</summary>
+		</View>
+	
+</members>
+</docs>

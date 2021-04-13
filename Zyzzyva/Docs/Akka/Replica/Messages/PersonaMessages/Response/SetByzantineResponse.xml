@@ -1,0 +1,25 @@
+﻿<docs>
+  <members name="byzantine">
+    <SetByzantineResponse>
+      <summary>
+        The Message that contains the response for a replica after a become byzantine request.
+      </summary>
+    </SetByzantineResponse>
+    <Byzantine>
+      <summary>
+        <see langword="true"/> if the replica had become byzantine, <see langword="false"/> if it has become normal.
+      </summary>
+    </Byzantine>
+    <SetByzantineResponseMsg>
+      <summary>
+        Creates the SetByzantineResponse message.
+      </summary>
+      <param name="byzantine">
+        The <see cref="bool"/> representing the value of the Byzantine field.
+      </param>
+      <returns>
+        The SetByzantineResponse message.
+      </returns>
+    </SetByzantineResponseMsg>
+  </members>
+</docs>

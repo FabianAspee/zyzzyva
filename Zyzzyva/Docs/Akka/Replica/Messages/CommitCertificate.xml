@@ -1,0 +1,40 @@
+﻿<docs>
+  <members name="commitcertificate">
+    <CommitCertificate>
+      <summary>
+        The Message that contains a CommitCertificate.
+      </summary>
+    </CommitCertificate>
+    <Replica>
+      <summary>
+        The <see cref="List{T}"/> of replicas that are present in this commit certificate. 
+        The List is composed of tuples composed by the id of the replica and his signature for the response in this CommitCertificate.
+      </summary>
+      <returns>
+        The <see cref="List{T}"/> of replicas that are present in this CommitCertificate.
+      </returns>
+    </Replica>
+    <Response>
+      <summary>
+        The <see cref="SpecResponseSigned"/> of this CommitCertificate.
+      </summary>
+      <returns>
+        The <see cref="CommitCertificate"/> of this CommitCertificate.
+      </returns>
+    </Response>
+    <CommitCertificateMsg>
+      <summary>
+        Creates the CommitCertificate.
+      </summary>
+      <param name="replica">
+        The <see cref="List{T}"/> of replicas that are present in this CommitCertificate.
+      </param>
+      <param name="response">
+        The <see cref="SpecResponseSigned"/> of this CommitCertificate.
+      </param>
+      <returns>
+        The CommitCertificate create.
+      </returns>
+    </CommitCertificateMsg>
+  </members>
+</docs>

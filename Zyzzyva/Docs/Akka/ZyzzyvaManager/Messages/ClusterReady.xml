@@ -1,0 +1,10 @@
+﻿<docs>
+	<members name="clusterready">
+		<ClusterReady>
+			<summary>
+				This class allow to zyzzyva manager communicate with the replicas when all node are arrived in the system,	
+				this class is very helpful because allow control when replicas are called at initialize
+			</summary> 
+		</ClusterReady> 
+	</members>
+</docs>

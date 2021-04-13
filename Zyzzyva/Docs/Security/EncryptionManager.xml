@@ -1,0 +1,43 @@
+﻿<docs>
+  <members name="encryption_manager">
+    <EncryptionManager>
+      <summary>
+        Utility Class that provides base methods to get a private/public key pair, sign a message and verify a signature.
+      </summary>
+    </EncryptionManager>
+    <SignMsg>
+      <summary>
+        Static method to get a Signature from an input string using the provided private key.
+      </summary>
+      <param name="toSign">The string to sign.</param>
+      <param name="privateKey">The key to use to encrypt.</param>
+      <returns>The array of byte representing the signature of the message.</returns>
+    </SignMsg>
+    <VerifySignature>
+      <summary>
+        Static method to verify a signature using a public key.
+      </summary>
+      <param name="signature">The signature to verify.</param>
+      <param name="toVerify">The string to use to verify if the signature is valid.</param>
+      <param name="key">The public key to use to verify the signature.</param>
+      <returns>
+        <see langword="true"/> if the signature is valid, <see langword="false"/> if not.
+      </returns>
+    </VerifySignature>
+    <GenKey_SaveInContainer>
+      <summary>
+        Static method used to obtain a private key from an RSA public/private key pair.
+      </summary>
+      <returns>a private key from an RSA public/private key pair.</returns>
+    </GenKey_SaveInContainer>
+    <GetKeyFromContainer>
+      <summary>
+        Static method used to obtain a public key from an RSA public/private key pair, obtained passing a private key.
+      </summary>
+      <param name="parameters">The private key to use to obtain the public key.</param>
+      <returns>
+        a public key from an RSA public/private key pair.
+      </returns>
+    </GetKeyFromContainer>
+  </members>
+</docs>

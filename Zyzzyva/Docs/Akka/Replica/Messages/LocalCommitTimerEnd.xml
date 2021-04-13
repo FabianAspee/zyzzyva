@@ -1,0 +1,37 @@
+﻿<docs>
+  <members name="localcommittimerend">
+    <LocalCommitTimerEnd>
+      <summary>
+        The Message send from a Client to itself when the timer for the LocalCommit timer expires .
+      </summary>
+    </LocalCommitTimerEnd>
+    <DigestRequest>
+      <summary>
+        The <see cref="string"/>  of the request for which the timer ended.
+      </summary>
+    </DigestRequest>
+    <Timestamp>
+      <summary>
+        The <see cref="int"/> timestamp of the request for which the timer ended.
+      </summary>
+    </Timestamp>
+    <LocalCommitTimerEndMsg>
+      <summary>
+        Creates the LocalCommitTimerEnd message.
+      </summary>
+      <param name="digestRequest">
+        <summary>
+          The <see cref="string"/> of digest of the request of this message.
+        </summary>
+      </param>
+      <param name="timestamp">
+        <summary>
+          The <see cref="int"/> timestamp of the request of this message.
+        </summary>
+      </param>
+      <returns>
+        The LocalCommitTimerEnd message created.
+      </returns>
+    </LocalCommitTimerEndMsg>
+  </members>
+</docs>

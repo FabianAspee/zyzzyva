@@ -1,0 +1,9 @@
+﻿<docs>
+	<members name="nodearrived">
+		<NodeArrived>
+			<summary>
+				Class that allow  node to communicate when this is arrived in the cluster
+			</summary>
+		</NodeArrived> 
+	</members>
+</docs>

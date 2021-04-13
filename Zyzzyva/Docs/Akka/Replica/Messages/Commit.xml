@@ -1,0 +1,41 @@
+﻿<docs>
+  <members name="commit">
+    <Commit>
+      <summary>
+        The Message that contains the Commit from a Client.
+      </summary>
+    </Commit>
+    <Client>
+      <summary>
+        The <see cref="IActorRef"/> of the Client that sent this Commit message.
+      </summary>
+      <returns>
+        The <see cref="IActorRef"/> of the Client that sent this Commit message.
+      </returns>
+    </Client>
+    <CommitCertificate>
+      <summary>
+        The <see cref="CommitCertificate"/> of this Commit Message.
+      </summary>
+      <returns>
+        The <see cref="CommitCertificate"/> of this Commit Message.
+      </returns>
+    </CommitCertificate>
+    <CommitMsg>
+      <summary>
+        Creates the Checkpoint message.
+      </summary>
+      <param name="client">
+        The <see cref="IActorRef"/> of the Client that sent this Commit message.
+      </param>
+      <param name="commitCertificate">
+        The <see cref="CommitCertificate"/> of this Commit Message.
+      </param>
+      <returns>
+        The Commit message.
+      </returns>
+    </CommitMsg>
+
+  
+</members>
+</docs>

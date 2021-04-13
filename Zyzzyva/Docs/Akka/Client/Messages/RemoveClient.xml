@@ -1,0 +1,21 @@
+﻿<docs>
+	<members name="removeclient">
+		<RemoveClient>
+			<summary>
+				This class allow you remove the client from the system, i.e when the actor existing in gRPC determine that actor in the cluster is not helpful, 
+				then the actor in gRPC can ask that this actor to die
+			</summary> 
+		</RemoveClient>
+		<RemoveClientC>
+			<summary>
+				This class allow you create an instance of this message and send from gRPC to Client in cluster.
+			</summary>
+			<param name="actor">This parameter represent an reference of the a client that exist in the system and that client gRPC he wants me to die</param>
+		</RemoveClientC>
+		<Actor>
+			<summary>
+				This property is a IActorRef, this property allow you save the reference of a actor in the system
+			</summary>
+		</Actor>
+	</members>
+</docs>

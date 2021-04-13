@@ -1,0 +1,28 @@
+﻿<docs>
+  <members name="orderreqfillhole">
+    <OrderReqFillHole>
+      <summary>
+        The OrderReqFillHole Message sent by a primary.
+        It is sent as response to a fill hole message.
+      </summary>
+    </OrderReqFillHole>
+    <OrderReq>
+      <summary>
+        The <see cref="OrderReq"/> of this OrderReqFillHole message.
+      </summary>
+    </OrderReq>
+    <OrderReqFillHoleMsg>
+      <summary>
+        Creates the OrderReqFillHole message.
+      </summary>
+      <param name="orderReq">
+        <summary>
+          The <see cref="OrderReq"/> of this Message.
+        </summary>
+      </param>
+      <returns>
+        The OrderReqFillHole message created.
+      </returns>
+    </OrderReqFillHoleMsg>
+  </members>
+</docs>

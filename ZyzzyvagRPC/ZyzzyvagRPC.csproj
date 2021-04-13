@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup> 
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>082a12df-ec3d-40c7-a703-a811a1a7d306</UserSecretsId>
+	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <SignAssembly>false</SignAssembly>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="app.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Protobuf Include="Protos\database.proto" GrpcServices="Server" /> 
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Akka" Version="1.4.14" />
+    <PackageReference Include="Akka.Cluster" Version="1.4.14" />
+    <PackageReference Include="Akka.Cluster.Tools" Version="1.4.14" />
+    <PackageReference Include="Akka.Serialization.Hyperion" Version="1.4.14" />
+    <PackageReference Include="Google.Protobuf" Version="3.14.0" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.27.0" />
+    <PackageReference Include="Hocon.Configuration" Version="2.0.3" />
+    <PackageReference Include="Hyperion" Version="0.9.16" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zyzzyva\Zyzzyva.csproj" />
+  </ItemGroup>
+
+</Project>

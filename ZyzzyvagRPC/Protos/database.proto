@@ -1,0 +1,97 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "ZyzzyvagRPC.Services";
+
+package database;
+
+service DataBase { 
+  rpc SubscribeWrite(stream WriteRequest) returns (stream WriteResponse); 
+  rpc SubscribeRead(stream ReadRequest) returns (stream ReadResponseS);
+  rpc SetByzantine(SetByzantineRequest) returns (SetByzantineResponse);
+
+}
+
+
+message WriteRequest{
+	oneof Action{
+		Insert msg = 1;
+		Update msg2 = 2;
+		Delete msg3 = 3;
+	}
+}
+message WriteResponse{
+	ReadAllResponseWrapper readAllResponse=1;
+
+}
+
+message SetByzantineResponse{
+	bool byzantine = 1;
+}
+
+message SetByzantineRequest{
+	int32 id=1;
+}
+
+message ReadRequest{
+	oneof Action{
+		Read msg = 1;
+		ReadAll msg2 = 2;
+	}
+}
+message ReadResponseS{
+	oneof Action{ 
+		ReadResponseWrapper msg = 1;
+		ReadAllResponseWrapper msg2 = 2;
+	}
+} 
+message Insert{
+	PersonagRPC persona=1;
+}
+message Update{
+	PersonagRPC persona=1;
+}
+message Delete{
+	int32 id = 1;
+}
+
+message Read{
+	int32 id = 1;
+}
+
+message ReadResponseWrapper{
+	ReadResponse response=1;
+	repeated ReplicaReadResponse responseList=2;
+	bool status = 3;
+}
+
+message ReadAllResponseWrapper{ 
+	ReadAllResponse response=1;
+	repeated ReplicaReadAllResponse responseList=2;
+	bool status = 3;
+}
+
+message ReplicaReadAllResponse{
+	ReadAllResponse response=1;
+	int32 id=2;
+}
+message ReplicaReadResponse{
+	ReadResponse response=1;
+	int32 id=2;
+}
+message ReadResponse{
+	PersonagRPC persona=1;
+}
+
+message ReadAll{
+}
+
+message ReadAllResponse{
+	repeated PersonagRPC persona=1;
+}
+message PersonagRPC{
+	int32 id = 1;
+	string nome = 2;
+	string cognome = 3;
+	int32 eta =4;
+	bool haMacchina = 5;
+}

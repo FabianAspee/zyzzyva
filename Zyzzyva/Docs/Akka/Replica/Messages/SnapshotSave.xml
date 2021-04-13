@@ -1,0 +1,10 @@
+﻿<docs>
+	<members name="snapshotsave">
+		<SnapshotSave>
+			<summary>
+				This class represent an immutable message that allow comunicate from a replica to their child, this message serves for save a snapshot that replicas obtain before, 
+				in the snapshot reply stage <see cref="SnapshotReply"></see>.
+			</summary>
+		</SnapshotSave> 
+</members>
+</docs>

@@ -1,0 +1,28 @@
+﻿<docs>
+  <members name="readpersona">
+    <ReadPersonaResponse>
+      <summary>
+        The Message that contains the response to a read persona request.
+      </summary>
+    </ReadPersonaResponse>
+    <Persona>
+      <summary>
+        The result of the read persona computation.
+      </summary>
+      <returns>
+        The <see cref="Persona"/> that is the result of a read persona operation.
+      </returns>
+    </Persona>
+    <ReadPersonaResp>
+      <summary>
+        Creates the UpdatePersonaResponse message.
+      </summary>
+      <param name="persona">
+        The <see cref="Persona"/> result of the read persona computation.
+      </param>
+      <returns>
+        The UpdatePersonaResponse.
+      </returns>
+    </ReadPersonaResp>
+  </members>
+</docs>

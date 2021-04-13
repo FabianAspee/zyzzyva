@@ -1,0 +1,23 @@
+﻿<docs>
+  <members name="abstractpersona">
+    <AbstractPersonaChild>
+      <summary>
+        The base Actor Class that has the ways to communicate with the DB and send replies to the father.
+      </summary>
+    </AbstractPersonaChild>
+    <_crud>
+      <summary>
+        The <see cref="IPersonaCRUD"/> used to communicate with the DB.
+      </summary>
+    </_crud>
+    <SendToFather>
+      <summary>
+        Method used to send a message to the father of the actor hierarchy. It is mainly used to 
+        send a <see cref="SpecResponse{T}"/> to the father after an action on the DB
+      </summary>
+      <param name="response"> The <see cref="IPersonaResponse"/> that must be sent to the father.</param>
+      <param name="msg">
+        The <see cref="OrderReq{T}"/> that was sent to compute the response sent back to the father.</param>
+    </SendToFather>
+  </members>
+</docs>

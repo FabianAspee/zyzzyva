@@ -1,0 +1,22 @@
+﻿<docs>
+	<members name="createclientresponse">
+		<CreateClientResponse>
+			<summary>
+				this class allow you save a instance of a actor into IActorRef.
+			</summary>
+
+		</CreateClientResponse>
+		<CreateClientResponseC>
+			<summary>
+				This constructor allow you create a instance of this class to save an instances of a actor in the system.
+			</summary>
+			<param name="actor">This parameter represent an instance of a actor in the system.</param>
+		</CreateClientResponseC>
+		<_actor>
+			<summary>
+				This property is a IActorRef, this property allow you save the reference of a actor in the system
+			</summary>
+		</_actor>
+	
+</members>
+</docs>

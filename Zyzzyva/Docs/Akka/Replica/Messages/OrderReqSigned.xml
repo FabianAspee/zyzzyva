@@ -1,0 +1,57 @@
+﻿<docs>
+  <members name="ordereqsigned">
+    <OrderReqSigned>
+      <summary>
+        The OrderReqSigned sent by a primary.
+      </summary>
+    </OrderReqSigned>
+    <View>
+      <summary>
+        The <see cref="int"/> view in which the primary sent this Message.
+      </summary>
+    </View>
+    <SequenceNumber>
+      <summary>
+        The <see cref="int"/> sequence number proposed by the primary for this Message.
+      </summary>
+    </SequenceNumber>
+    <DigestRequest>
+      <summary>
+        The <see cref="string"/> hash digest of the request of this OrderReqSigned.
+      </summary>
+    </DigestRequest>
+    <DigestHistory>
+      <summary>
+        The <see cref="string"/> hash digest of the history of the primary when it sent this OrderReqSigned.
+      </summary>
+    </DigestHistory>
+    <OrderReqSignedMsg>
+      <summary>
+        Creates the OrderReqSigned.
+      </summary>
+      <param name="view">
+        <summary>
+          The <see cref="int"/> view of this Message.
+        </summary>
+      </param>
+      <param name="sequenceNumber">
+        <summary>
+          The <see cref="int"/> sequence number of this Message.
+        </summary>
+      </param>
+      <param name="digestRequest">
+        <summary>
+          The <see cref="string"/> hash digest of the request of this OrderReqSigned.
+        </summary>
+      </param>
+      <param name="digestHistory">
+        <summary>
+          The <see cref="string"/> hash digest of the history of this OrderReqSigned.
+        </summary>
+      </param>
+      <returns>
+        The OrderReqSigned created.
+      </returns>
+    </OrderReqSignedMsg>
+  </members>
+</docs>

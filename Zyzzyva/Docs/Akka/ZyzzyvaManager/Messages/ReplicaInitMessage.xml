@@ -1,0 +1,23 @@
+﻿<docs>
+	<members name="replicainitmessage">
+		<ReplicaInitMessage>
+			<summary>
+				Class that rapresent immutable message to communicate public key to zyzzyvamanager
+			</summary>
+			<remark>
+			</remark>
+		</ReplicaInitMessage>
+		<ReplicaInitMessageC>
+			<summary>
+				This costructor allow you create an instance of this class and send public key from replica to zyzzyvamanager.
+			</summary>
+			<param name="key">public key of the a replica</param>
+		</ReplicaInitMessageC>
+		<PublicKey>
+			<summary>
+				This property rapresent public key of one replica.
+			</summary>
+			
+		</PublicKey> 
+</members>
+</docs>

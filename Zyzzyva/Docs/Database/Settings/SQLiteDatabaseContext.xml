@@ -1,0 +1,20 @@
+﻿<docs>
+  <members name="sqlcontext">
+    <SQLiteDatabaseContext>
+      <summary>
+        An extension of the <see cref="DbContext" /> for SQLite.
+      </summary>
+      <remarks>
+        Creates an SQLite instance of the <see cref="DbContext"/> to be used as mapping point to the database.
+      </remarks>
+    </SQLiteDatabaseContext>
+    <Persona>
+      <summary>
+        Obtains a <see cref="DbSet{}" /> of the <see cref="Persona"/> table.
+      </summary>
+      <returns>
+        The <see cref="DbSet{}" /> of the <see cref="Persona"/> table.
+      </returns>
+    </Persona>
+  </members>
+</docs>

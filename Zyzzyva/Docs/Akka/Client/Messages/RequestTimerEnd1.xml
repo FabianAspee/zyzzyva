@@ -1,0 +1,36 @@
+﻿<docs>
+	<members name="requesttimerend1">
+		<RequestTimerEnd1>
+			<summary>
+				This class is helpful when the client send request to the primary,
+				this class allow you self-sending a message with timestamp and digest request of the message that client were send to primary
+			</summary>
+		</RequestTimerEnd1>
+		<Timestamp>
+			<summary>
+				This property is a Timestamp that client set to request, this is util because like this if the replica response with another digest request, the timestamp is not modified and we can cancell timer and find
+				the request that we want resend to the replicas.
+			</summary>
+		</Timestamp>
+		<RequestTimerEnd1C>
+			<summary>
+				This constructor allow you create a instance of this class to save a timestamp and digestrequest of a request.
+			</summary>
+			<param name="digestRequest">
+				This parameter represent digestrequest of a request.
+			</param>
+			<param name="timestamp">This parameter represent timestamp of a request.</param>
+
+		</RequestTimerEnd1C>
+		<DigestRequest>
+			<summary>
+				This property contains the digest of the request that is being executed .
+			</summary>
+		</DigestRequest>
+
+
+
+
+	</members>
+</docs>
+

@@ -1,0 +1,23 @@
+﻿<docs>
+	<members name="byzantineeventargs">
+		<ByzantineEventArgs>
+			<summary>
+				This class we allow usea event for a determinate message in this case when the aplication want make byzantine a replica.
+			</summary> 
+		</ByzantineEventArgs>
+		<SetByzantineResponse>
+			<summary>
+				This property rapresent response from the replica.
+			</summary>
+
+		</SetByzantineResponse> 
+		<ByzantineEventArgsC>
+			<summary>
+				Constructor that allow save a bool with the response from replica to send to event.
+			</summary>
+			<param name="setByzantineResponse">response from replica to know if her is byzantine or not</param> 
+		</ByzantineEventArgsC>
+		
+	</members>
+</docs>
+

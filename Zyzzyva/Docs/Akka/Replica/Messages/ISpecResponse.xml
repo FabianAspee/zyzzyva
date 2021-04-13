@@ -1,0 +1,22 @@
+﻿<docs>
+  <members name="ispecresponse">
+    <ISpecResponse>
+      <summary>
+        Interface that models the Response from the replica.
+      </summary>
+    </ISpecResponse>
+    <ISpecResponseT>
+      <summary>
+        Generic response used to manage different types of responses.
+      </summary>
+      </ISpecResponseT>
+    <GetResponse>
+      <summary>
+        Method that returns the internal response of the IResponse.
+      </summary>
+      <returns>
+        The generic Response contained in this IResponse.
+      </returns>
+    </GetResponse>
+  </members>
+</docs>

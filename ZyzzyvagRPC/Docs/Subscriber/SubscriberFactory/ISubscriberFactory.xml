@@ -1,0 +1,31 @@
+﻿<docs>
+	<members name="isubscriberfactory">
+		<ISubscriberFactory>
+			<summary>
+				interface that allow create different object that  you can used to call server
+				and return different information in based to object that yo create.
+			</summary>
+		</ISubscriberFactory>
+		<GetFibonacciSubscriber>
+			 <summary>
+				 allow create an instance of FibonacciSubscriber and call server with different methods.
+				 See <see cref="FibonacciSubscriber"/>.
+			 </summary>
+			<returns>An instance of FibonacciSubscriber</returns>
+		</GetFibonacciSubscriber>
+		<GetMemberSubscriber>
+			 <summary>
+				 allow create an instance of MemberSubscriber and call server with different methods.
+				 See <see cref="MemberSubscriber"/>.
+			 </summary>
+			<returns>An instance of MemberSubscriber</returns>
+		</GetMemberSubscriber>
+		<GetPersonSubscriber>
+			 <summary>
+				 allow create an instance of PersonSubscriber and call server with different methods.
+				 See <see cref="PersonaSubscriber"/>.
+			 </summary>
+			<returns>An instance of PersonSubscriber</returns>
+		</GetPersonSubscriber>
+	</members>
+</docs>

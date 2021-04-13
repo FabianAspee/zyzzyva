@@ -1,0 +1,29 @@
+﻿<docs>
+  <members name="insert">
+    <InsertPersona>
+      <summary>
+        The Message that contains the request to insert a persona in the db.
+      </summary>
+    </InsertPersona>
+    <Persona>
+      <summary>
+        The <see cref="Persona"/> to insert.
+      </summary>
+      <returns>
+        The <see cref="Persona"/> persona to insert.
+      </returns>
+    </Persona>
+    <InsertPersonaMsg>
+      <summary>
+        Creates the InsertPersona message.
+      </summary>
+      <param name="persona">
+        The <see cref="Persona"/> persona to update.
+      </param>
+      <returns>
+        The InsertPersona message.
+      </returns>
+    </InsertPersonaMsg>
+
+  </members>
+</docs>

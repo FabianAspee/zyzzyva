@@ -1,0 +1,33 @@
+﻿<docs>
+  <members name="insertpersona">
+    <InsertPersonaResponse>
+      <summary>
+        The Message that contains the response to a insert persona request.
+      </summary>
+    </InsertPersonaResponse>
+    <Persone>
+      <summary>
+        The result of the insert persona computation.
+      </summary>
+      <returns>
+        The <see cref="ImmutableList"/> of <see cref="Persona"/> that is in the db after an insert of a new persona.
+      </returns>
+    </Persone>
+    <InsertPersonaResp>
+      <summary>
+        Creates the InsertPersonaResponse message.
+      </summary>
+      <param name="persone">
+        The <see cref="ImmutableList"/> of <see cref="Persona"/> that is in the db after an insert of a new persona.
+      </param>
+       <param name="statusOperation">
+        The status of this operation, that can be true or false.
+      </param>
+      <returns>
+        The InsertPersonaResponse.
+      </returns>
+    </InsertPersonaResp>
+
+  
+</members>
+</docs>

@@ -1,0 +1,86 @@
+﻿akka { 
+   actor {
+      provider = cluster
+      serializers {
+	      wire = " Akka.Serialization.HyperionSerializer, Akka.Serialization.Hyperion"
+         akka-cluster-client = "Akka.Cluster.Tools.Client.Serialization.ClusterClientMessageSerializer, Akka.Cluster.Tools"
+      }
+      serialization-bindings {
+		   "System.Object" = wire
+         "Akka.Cluster.Tools.Client.IClusterClientMessage, Akka.Cluster.Tools" = akka-cluster-client
+      }
+      serialization-identifiers {
+         "Akka.Cluster.Tools.Client.Serialization.ClusterClientMessageSerializer, Akka.Cluster.Tools" = 15
+      }
+      deployment {
+         /client_manager/zyzzyvaRouter {
+            router = round-robin-group
+            routees.paths = ["/user/zyzzyva_manager"]
+            cluster {
+               enabled = on
+               allow-local-routees = on
+            }
+         }
+         /replica_manager/zyzzyvaRouter {
+            router = broadcast-group
+            routees.paths = ["/user/zyzzyva_manager"]
+            cluster {
+               enabled = on
+               allow-local-routees = on
+            }
+         }
+          /zyzzyva_manager/replicaRouter {
+            router = broadcast-group
+            routees.paths = ["/user/replica_manager"]
+            cluster {
+               enabled = on
+               allow-local-routees = on
+            }
+         }
+          /zyzzyva_manager/clientRouter {
+            router = broadcast-group
+            routees.paths =  ["/user/client_manager/client0","/user/client_manager/client1","/user/client_manager/client2"]
+            cluster {
+               enabled = on
+               allow-local-routees = on
+            }
+         }
+          /client_manager/clientRouter {
+            router =round-robin-group
+            routees.paths = ["/user/client_manager/client0","/user/client_manager/client1","/user/client_manager/client2"]
+            cluster {
+               enabled = on
+               allow-local-routees = on
+            }
+         }
+      }
+   }
+   remote {
+      log-remote-lifecycle-events = DEBUG
+      
+      dot-netty.tcp {  
+
+         bind-hostname = "192.168.1.100"
+         bind-port=""
+         hostname = localhost
+          # the values below this comment may be overridden by Akka.Bootstrap.Docker at runtime 
+         port = 0
+        maximum-frame-size = 100000000b
+      }
+   }
+   cluster { 
+    downing-provider-class = "Akka.Cluster.SplitBrainResolver, Akka.Cluster"
+    split-brain-resolver {
+      active-strategy = keep-majority
+    }
+      seed-nodes = [
+         "akka.tcp://cluster-playground@zyzzyva:9090",
+         "akka.tcp://cluster-playground@zyzzyva1:9091",
+         "akka.tcp://cluster-playground@zyzzyva3:9092"]
+      auto-down-unreachable-after = 60s
+      failure-detector {
+        heartbeat-interval = 10 s
+        acceptable-heartbeat-pause = 13 s
+      }
+   }
+}

@@ -1,0 +1,28 @@
+﻿<docs>
+  <members name="fillholetimerend">
+    <FillHoleTimerEnd>
+      <summary>
+        The Message that contains a FillHoleTimerEnd. It is used by a replica to notify itself when a timer
+        for a <see cref="FillHole"/> Message expired. 
+      </summary>
+    </FillHoleTimerEnd>
+    <FillHole>
+      <summary>
+        The <see cref="FillHole"/> message of which the timer expired.
+      </summary>
+    </FillHole>
+    <FillHoleTimerEndMsg>
+      <summary>
+        Creates the FillHoleTimerEnd Message.
+      </summary>
+      <param name="fillHole">
+        <summary>
+          The <see cref="FillHole"/> message of of this message.
+        </summary>
+      </param>
+      <returns>
+        The FillHoleTimerEnd Message created.
+      </returns>
+    </FillHoleTimerEndMsg>
+  </members>
+</docs>

@@ -1,0 +1,25 @@
+﻿<docs>
+	<members name="replicaadd">
+		<ReplicaAdd>
+			<summary>
+				This class is very helpful, because when a replica is arrived, it necessary to insert this from the system.
+				This class must be call when a replica is arrived.
+			</summary>
+			<remark>
+			</remark>
+		</ReplicaAdd>
+		<ReplicaAddC>
+			<summary>
+				This costructor allow you create a new instance of this class.
+			</summary>
+			<param name="actorRef">This parameter contain information from a replica, i.e -> public key, IActorRef and id.</param>
+		</ReplicaAddC>
+		<ActorRef>
+			<summary>
+				This property contains all information neccesary to delete a replica when this go dead.
+			</summary>
+		</ActorRef>
+		 
+	
+</members>
+</docs>

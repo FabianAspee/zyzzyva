@@ -1,0 +1,9 @@
+﻿<docs>
+	<members name="clusterokclient">
+		<ClusterOkClient>
+			<summary>
+				This class represents an immutable message that communicate at client that all replicas were are arrived in the cluster.
+			</summary> 
+		</ClusterOkClient> 
+	</members>
+</docs>

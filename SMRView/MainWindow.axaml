@@ -1,0 +1,61 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="SMRView.MainWindow"
+        Title="SMRViewZyzzyva" MinHeight="450" MinWidth="1200"   
+		Closing="Window_Closing">
+	<Grid x:Name="grid" Margin="0,0,0,0">
+		<Grid.ColumnDefinitions >
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+	
+		<TextBox x:Name="person" Grid.Column="1" TextWrapping="Wrap" Margin="5,55,5,5" ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
+		<TextBox x:Name="nameBox"  HorizontalAlignment="Center" Margin="0,96,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
+		<TextBox x:Name="surNameBox"   HorizontalAlignment="Center" Margin="0,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
+		<TextBlock Text="Nome" HorizontalAlignment="Left" Margin="21,92,0,0" VerticalAlignment="Top"/>
+		<TextBlock Text="Ha Machina"  HorizontalAlignment="Left" Margin="21,214,0,0" VerticalAlignment="Top"/>
+		<TextBlock Text="Eta"  HorizontalAlignment="Left" Margin="21,172,0,0" VerticalAlignment="Top"/>
+		<TextBlock Text="Cognome"  HorizontalAlignment="Left" Margin="21,127,0,0" VerticalAlignment="Top"/>
+		<TextBlock Text="Id Persona"  HorizontalAlignment="Left" Margin="21,282,0,0" VerticalAlignment="Top"/>
+		<TextBox x:Name="etaBox"  HorizontalAlignment="Center" Margin="0,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
+		<CheckBox  x:Name="haMachinaBox"   HorizontalAlignment="Left" Margin="102,220,0,0" VerticalAlignment="Top"/>
+		<TextBox x:Name="idpersonBox"  HorizontalAlignment="Left" Margin="102,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
+		<Button x:Name="insert" Click="Insert_Click" Content="Inserisci Persona" HorizontalAlignment="Left" Margin="294,222,0,0" VerticalAlignment="Top" Width="104"/>
+		<Button x:Name="update" Click="Update_Click" Content="Aggiorna Persona" HorizontalAlignment="Left" Margin="294,286,0,0" VerticalAlignment="Top" Width="104"/>
+	
+		<Button x:Name="read" Click="Read_Click" Content="Leggi Persona" HorizontalAlignment="Left" Margin="83,346,0,0" VerticalAlignment="Top" Width="83"/>
+		<Button x:Name="delete"  Click="Delete_Click" Content="Elimina Persona" HorizontalAlignment="Left" Margin="184,346,0,0" VerticalAlignment="Top" Width="103"/>
+		<Button x:Name="readAll" Click="ReadAll_Click" Content="Leggi tutte le persone" Grid.Column="1" HorizontalAlignment="Left" Margin="39,22,0,0" VerticalAlignment="Top" Width="129"/>
+		<TextBox x:Name="ReqB"  HorizontalAlignment="Left" Margin="83,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
+		<Grid x:Name="inner_grid" Grid.Column="2">
+			<Grid.ColumnDefinitions >
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="30"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="30"/>
+				<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+			<TextBlock Text="Replica 0" Grid.Column="0" Grid.Row="0"/>
+			<Button x:Name="ReplicaButton0" Content="Normale"  HorizontalAlignment="Right" Grid.Column="0" Grid.Row="0" Width="138" Margin="62,0,5,0" Click="Replica0Byzantine"/>
+			<TextBox Tag="0" x:Name="Replica0" Grid.Column="0" Grid.Row="1" Margin="5,5,5,5" TextWrapping="Wrap" ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
+			<TextBlock Text="Replica 1" Grid.Column="0" Grid.Row="2"/>
+			<Button x:Name="ReplicaButton1" Content="Normale"  HorizontalAlignment="Right" Grid.Column="0" Grid.Row="2" Width="138" Margin="62,0,5,0" Click="Replica1Byzantine"/>
+			<TextBox Tag="1" x:Name="Replica1" Grid.Column="0" Grid.Row="3" Margin="5,5,5,5" TextWrapping="Wrap" ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
+			<TextBlock Text="Replica 2" Grid.Column="1" Grid.Row="0"/>
+			<Button x:Name="ReplicaButton2" Content="Normale"  HorizontalAlignment="Right" Grid.Column="1" Grid.Row="0" Width="138" Margin="62,0,5,0" Click="Replica2Byzantine"/>
+			<TextBox Tag="2" x:Name="Replica2" Grid.Column="1" Grid.Row="1" Margin="5,5,5,5" TextWrapping="Wrap" ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
+			<TextBlock Text="Replica 3" Grid.Column="1" Grid.Row="2"/>
+			<Button x:Name="ReplicaButton3" Content="Normale"  HorizontalAlignment="Right" Grid.Column="1" Grid.Row="2" Width="138" Margin="62,0,5,0" Click="Replica3Byzantine"/>
+			<TextBox Tag="3" x:Name="Replica3" Grid.Column="1" Grid.Row="3" Margin="5,5,5,5" TextWrapping="Wrap" ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
+		</Grid>
+
+	</Grid>
+	
+</Window>

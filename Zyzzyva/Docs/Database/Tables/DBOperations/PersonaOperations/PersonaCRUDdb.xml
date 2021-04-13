@@ -1,0 +1,9 @@
+﻿<docs>
+  <members name="persona">
+    <PersonaCRUD>
+      <summary>
+        Creates an istance of the <see cref="PersonaCRUDdb"/> class.
+      </summary>
+    </PersonaCRUD>
+  </members>
+</docs>

@@ -1,0 +1,27 @@
+﻿<docs>
+  <members name="digest_manager">
+    <DigestManager>
+      <summary>
+        Utility Class that provides base methods to get hash digests.
+      </summary>
+    </DigestManager>
+    <GenerateFromString>
+      <summary>
+        Static method to get a digest from an input string. It uses SHA 512.
+      </summary>
+      <param name="inputString">The string to digest.</param>
+      <returns>The hash of the input string, obtained using SHA 512.</returns>
+    </GenerateFromString>
+    <DigestList>
+      <summary>
+        Static method to get a create a Digest composing two different string, so that the digest
+        can be computated if one has the two strings components
+      </summary>
+      <param name="history">The first string to compose.</param>
+      <param name="request">The second string to compose.</param>
+      <returns>
+        The hash of the obtained composing the two input strings, obtained using SHA 512
+      </returns>
+    </DigestList>
+  </members>
+</docs>

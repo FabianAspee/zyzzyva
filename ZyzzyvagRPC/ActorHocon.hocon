@@ -1,0 +1,37 @@
+﻿akka { 
+               actor {
+                provider = cluster
+                   serializers {
+				       wire = " Akka.Serialization.HyperionSerializer, Akka.Serialization.Hyperion"
+                       akka-cluster-client = "Akka.Cluster.Tools.Client.Serialization.ClusterClientMessageSerializer, Akka.Cluster.Tools"
+                }
+                serialization-bindings {
+				  "System.Object" = wire
+                   "Akka.Cluster.Tools.Client.IClusterClientMessage, Akka.Cluster.Tools" = akka-cluster-client
+                }
+                    serialization-identifiers {
+                    "Akka.Cluster.Tools.Client.Serialization.ClusterClientMessageSerializer, Akka.Cluster.Tools" = 15
+                }
+            deployment {
+              /node/processorRouter {
+                router = round-robin-group
+                routees.paths = ["/user/node/processor"]
+                cluster {
+                  enabled = on
+                  allow-local-routees = on
+                }
+              }
+            }
+          }
+          remote {
+            log-remote-lifecycle-events = DEBUG
+            dot-netty.tcp {
+              hostname = localhost
+              port = 0
+               maximum-frame-size = 100000000b
+            }
+          }
+          cluster {  
+            auto-down-unreachable-after = 10s
+          }
+        }

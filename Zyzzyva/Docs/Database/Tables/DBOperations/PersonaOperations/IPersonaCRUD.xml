@@ -1,0 +1,93 @@
+﻿<docs>
+  <members name="ipersona">
+    <IPersonaCRUD>
+      <summary>
+        The Contract to make CRUD Operations on the Persona table in the database.
+      </summary>
+    </IPersonaCRUD>
+    <ReadAllPersone>
+      <summary>
+        Reads all the Persona in the database
+      </summary>
+      <returns>
+        The <see cref="ImmutableList"/> <see cref="Persona"/> in the database.
+      </returns>
+    </ReadAllPersone>
+    <ReadPersona>
+      <summary>
+        Reads a Persona in the Database.
+      </summary>
+      <remarks>
+        Reads a Persona in the Database searching is id.
+      </remarks>
+      <param name="id">
+        The <see cref="int"/> id of the Persona to search in the database.
+      </param>"
+      <returns>
+        The <see cref="Persona"/> found in the database.
+      </returns>
+    </ReadPersona>
+    <InsertPersona>
+      <summary>
+        Inserts a Persona in the Database.
+      </summary>
+      <param name="persona">
+        The <see cref="Persona"/> to insert in the database.
+      </param>"
+      <returns>
+        The <see cref="ImmutableList"/> of <see cref="Persona"/> in the databse after the insert.
+      </returns>
+    </InsertPersona>
+    <UpdatePersona>
+      <summary>
+        Updates a Persona in the Database.
+      </summary>
+      <param name="persona">
+        The <see cref="Persona"/> to update in the database.
+      </param>"
+      <returns>
+        The <see cref="ImmutableList"/> of <see cref="Persona"/> in the databse after the update.
+      </returns>
+    </UpdatePersona>
+    <DeletePersona>
+      <summary>
+        Deletes a Persona from the Database.
+      </summary>
+      <param name="id">
+        The <see cref="int"/> id of the <see cref="Persona"/> to delete from the database.
+      </param>"
+      <returns>
+        The <see cref="ImmutableList"/> of <see cref="Persona"/> in the databse after the delete.
+      </returns>
+    </DeletePersona>
+    <ReadFilePersona>
+      <summary>
+        Reads a dictionary pf Persona from a file saved in the local machine.
+      </summary>
+    </ReadFilePersona>
+    <WriteFilePersona>
+      <summary>
+        Write the dictionary of Persona to a file saved in the local machine.
+      </summary>
+    </WriteFilePersona>
+    <RollBackToLastAction>
+      <summary>
+        Rolls back the database dictionary undoing the last action performed on it.
+      </summary>
+    </RollBackToLastAction>
+    <GetSnapshot>
+      <summary>
+        Gets a snapshot of the entire database dictionary at the state it is called.
+      </summary>
+      <returns>
+        The snapshot of the entire database dictionary at the state it is called
+      </returns>
+    </GetSnapshot>
+    <SaveSnapshot>
+      <summary>
+        Sets the state of the internal database to the provided one.
+      </summary>
+      <param name ="streamReader">The origin database to set as new internal one.</param>
+    </SaveSnapshot>
+  </members>
+</docs>

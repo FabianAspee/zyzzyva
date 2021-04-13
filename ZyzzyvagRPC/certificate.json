@@ -1,0 +1,6 @@
+{
+  "certificateSettings": {
+    "fileName": "aspnetapp.pfx",
+    "password": "test123"
+  }
+}

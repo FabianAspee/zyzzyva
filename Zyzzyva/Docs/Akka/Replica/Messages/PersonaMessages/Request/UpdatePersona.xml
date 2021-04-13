@@ -1,0 +1,28 @@
+﻿<docs>
+  <members name="update">
+    <UpdatePersona>
+      <summary>
+        The Message that contains the request to update a persona in the db.
+      </summary>
+    </UpdatePersona>
+    <Persona>
+      <summary>
+        The <see cref="Persona"/> to update.
+      </summary>
+      <returns>
+        The <see cref="int"/> persona to update.
+      </returns>
+    </Persona>
+    <UpdatePersonaMsg>
+      <summary>
+        Creates the UpdatePersona message.
+      </summary>
+      <param name="persona">
+        The <see cref="int"/> persona to update.
+      </param>
+      <returns>
+        The UpdatePersona message.
+      </returns>
+    </UpdatePersonaMsg>
+</members>
+</docs>

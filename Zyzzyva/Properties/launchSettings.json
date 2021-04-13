@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Zyzzyva": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

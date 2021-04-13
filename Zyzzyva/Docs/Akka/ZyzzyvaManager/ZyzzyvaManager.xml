@@ -1,0 +1,27 @@
+﻿<docs>
+	<members name="zyzzyvamanager">
+		<ZyzzyvaManager>
+			<summary>
+				Class that implement all operation that allow you remove, insert a client and replicas
+				this class know all replicas and clients in such a way that, when a replica to dead or a client to dead, this class will comunicate clients or replicas
+				as appropiate. 
+			</summary>
+			<remark>
+				This class listen when a node arrived and a node removed.
+			</remark>
+		</ZyzzyvaManager>
+		<ZyzzyvaManagerC>
+			<summary>
+				This costructor allow create an instance for this class.
+			</summary>
+		</ZyzzyvaManagerC>
+		<MyProps>
+			<summary>
+				Static method to create the Zyzzyva Manager through the Props.
+			</summary>
+			<param name="f">Max failures that represent all replicas that the system can have dead.</param>
+			<returns>The props to create the ZyzzyvaManager actor.</returns>
+		</MyProps>
+	</members>
+</docs>
+

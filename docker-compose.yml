@@ -1,0 +1,74 @@
+version: '3.4' 
+services:
+  zyzzyva: 
+    image: ${DOCKER_REGISTRY-}zyzzyva
+    build:
+      context: .
+      dockerfile: Zyzzyva/Dockerfile
+    hostname: zyzzyva
+    ports:
+      - 9090:9090 
+    environment:
+      CLUSTER_PORT: 9090
+      CLUSTER_IP: zyzzyva
+      SEED_PORT_1600_TCP_ADDR: zyzzyva
+      MAX_FAILURES: 1
+
+  zyzzyva1: 
+    image: ${DOCKER_REGISTRY-}zyzzyva
+    build:
+      context: .
+      dockerfile: Zyzzyva/Dockerfile
+    hostname: zyzzyva1
+    ports:
+      - 9091:9091 
+    environment:
+      CLUSTER_PORT: 9091
+      CLUSTER_IP: zyzzyva1
+      SEED_PORT_1600_TCP_ADDR: zyzzyva1
+      MAX_FAILURES: 1
+
+  zyzzyva3: 
+    image: ${DOCKER_REGISTRY-}zyzzyva
+    build:
+      context: .
+      dockerfile: Zyzzyva/Dockerfile
+    hostname: zyzzyva3
+    ports:
+      - 9092:9092 
+    environment:
+      CLUSTER_PORT: 9092
+      CLUSTER_IP: zyzzyva3
+      SEED_PORT_1600_TCP_ADDR: zyzzyva3
+      MAX_FAILURES: 1
+
+  zyzzyva2:
+    image: ${DOCKER_REGISTRY-}zyzzyva
+    build:
+      context: .
+      dockerfile: Zyzzyva/Dockerfile
+    environment:
+      CLUSTER_IP: ""
+      CLUSTER_PORT: 0
+      SEED_PORT_1600_TCP_ADDR: zyzzyva
+
+  zyzzyvagrpc:
+    image: ${DOCKER_REGISTRY-}zyzzyvagrpc
+    hostname: zyzzyvagrpc
+    ports:
+      - 5001:443
+    build:
+      context: .
+      dockerfile: ZyzzyvagRPC/Dockerfile
+    environment:
+      CLUSTER_IP: ""
+      CLUSTER_PORT: 0 
+       
+
+  nginx:
+    image: ${DOCKER_REGISTRY-}nginx
+    ports:
+      - 8080:443
+    build:
+      context: .
+      dockerfile: ZyzzyvagRPC/nginx/DockerFile

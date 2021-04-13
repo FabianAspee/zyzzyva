@@ -1,0 +1,12 @@
+﻿<docs>
+	<members name="personasubscriber">
+		<PersonaSubscriber>
+			<summary>
+				class that implement all method of IPersonaSubscriber See <see cref="IPersonSubscriber"/>.
+			</summary>
+			<remarks>
+				can Read, ReadAll, Insert, Update, Delete.
+			</remarks>
+		</PersonaSubscriber> 
+	</members>
+</docs>

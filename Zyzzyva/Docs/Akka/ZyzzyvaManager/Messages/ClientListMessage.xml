@@ -1,0 +1,20 @@
+﻿<docs>
+	<members name="clientlistmessage">
+		<ClientListMessage>
+			<summary>
+				Class that represent an immutable message that allow communicate to all replicas, all the ActorRefs and Public Keys from the clients
+			</summary> 
+		</ClientListMessage>
+		<ClientListMessageC>
+			<summary>
+				Constructor that allow you create an instance of this class and send all clients and their public key to all replicas.
+			</summary>
+			<param name="clients">Dictionary that contains IActorRef of alls client and ther public key.</param>
+		</ClientListMessageC>
+		<Clients>
+			<summary>
+				Dictionary that contains IActorRef of alls client and ther public key.
+			</summary>
+		</Clients> 
+</members>
+</docs>

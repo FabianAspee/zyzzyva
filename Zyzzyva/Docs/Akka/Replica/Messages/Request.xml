@@ -1,0 +1,26 @@
+﻿<docs>
+  <members name="request">
+    <Request>
+      <summary>
+        The Request sent by a client. It is generic and extends <see cref="IRequest{T}"/>
+      </summary>
+    </Request>
+    <RequestMsg>
+      <summary>
+        Creates the Reqeuest Message.
+      </summary>
+      <param name="request">
+        The Request of this message.
+      </param>
+      <param name="client">
+        The client of this message.
+      </param>
+      <param name="timestamp">
+        The timestamp of this message.
+      </param>
+      <returns>
+        The created Reqeuest Message.
+      </returns>
+    </RequestMsg>
+</members>
+</docs>

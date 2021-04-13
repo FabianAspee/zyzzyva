@@ -1,0 +1,25 @@
+﻿<docs>
+	<members name="isubscriber">
+		<ISubscriber>
+			<summary>
+				The main Subscriber Interfaces.
+			</summary>
+			<remarks>
+				can create an Actor to receive responses from the cluster.
+			</remarks>
+		</ISubscriber>
+		<CreateActor>
+			<summary>
+				create an actor to receive responses.
+				See <see cref="ClusterClientAccess.CreateActor"/>
+				
+			</summary>
+			<example>
+				<code>
+					var actorRef f = ISubscriber.CreateActor();
+				</code>
+			</example>
+			See <see cref="PersonaSubscriber.CreateActor()"/>.
+		</CreateActor>
+	</members>
+</docs>

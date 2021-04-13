@@ -1,0 +1,57 @@
+﻿<docs>
+  <members name="localcommit">
+    <LocalCommit>
+      <summary>
+        The Message that contains the LocalCommit from a Replica.
+      </summary>
+    </LocalCommit>
+    <View>
+      <summary>
+        The <see cref="int"/> view in which this LocalCommit is sent.
+      </summary>
+    </View>
+    <DigestRequest>
+      <summary>
+        The <see cref="string"/> hash digest of the request for which this LocalCommit was sent.
+      </summary>
+    </DigestRequest>
+    <History>
+      <summary>
+        The <see cref="List{T}"/> of <see cref="OrderReq"/> representing the internal history of the replica
+        that sent this message up to the request represented by the sequence number of the Commit sent by the Client.
+      </summary>
+    </History>
+    <Id>
+      <summary>
+        The <see cref="int"/> id of the replica that sent this message</summary>
+    </Id>
+    <Client>
+      <summary>
+        The <see cref="IActorRef"/> of the Client that sent the original Commit to the replica.
+      </summary>
+    </Client>
+    <LocalCommitMsg>
+      <summary>
+        Creates the LocalCommit message.
+      </summary>
+      <param name="view">
+        The <see cref="int"/> view of this message.
+      </param>
+      <param name="digestRequest">
+        The <see cref="string"/> digest of the request of the Message.
+      </param>
+      <param name="history">
+        The <see cref="List{T}"/> of <see cref="OrderReq"/> representing history this Message.
+      </param>
+      <param name="id">
+        The <see cref="int"/> id of the replica of this Message.
+      </param>
+      <param name="client">
+        The <see cref="IActorRef"/> client of this Message.
+      </param>
+      <returns>
+        The LocalCommit message.
+      </returns>
+    </LocalCommitMsg>
+  </members>
+</docs>

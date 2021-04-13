@@ -1,0 +1,22 @@
+﻿<docs>
+  <members name="database">
+    <DatabaseActor>
+      <summary>
+        The Actor that manages the requests to the Database.
+        It is capable to forward different requests to the right actor based
+        on the type of the request.
+      </summary>
+    </DatabaseActor>
+    <DatabaseActorC>
+      <summary>
+        Creates a DatabaseActor actor.
+      </summary>
+    </DatabaseActorC>
+    <MyProps>
+      <summary>
+        Static method to create the DatabaseActor Actor through the Props.
+      </summary>
+      <returns>The props to create the DatabaseActor actor.</returns>
+    </MyProps>
+</members>
+</docs>

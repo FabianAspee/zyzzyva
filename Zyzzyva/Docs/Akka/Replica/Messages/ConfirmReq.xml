@@ -1,0 +1,39 @@
+﻿<docs>
+  <members name="confirmreq">
+    <ConfirmReq>
+      <summary>
+        The Message that contains a ConfirmReq.
+      </summary>
+    </ConfirmReq>
+    <view>
+      <summary> The <see cref="int"/> view number in wich the replica sent this ConfirmReq message.</summary>
+    </view>
+    <msg>
+      <summary>
+        The <see cref="IRequest"/> of this ConfirmReq message.
+      </summary>
+    </msg>
+    <myId>
+      <summary>
+        The <see cref="int"/> id of the replica sent this ConfirmReq message.
+      </summary>
+    </myId>
+    <ConfirmReqMsg>
+      <summary>
+        Creates the ConfirmReq message.
+      </summary>
+      <param name="view">
+        The <see cref="int"/> view number of this ConfirmReq message.
+      </param>
+      <param name="msg">
+        The <see cref="IRequest"/> of this ConfirmReq message.
+      </param>
+      <param name="myId">
+        The <see cref="int"/> id of the replica sent this ConfirmReq message.
+      </param>
+      <returns>
+        The ConfirmReq message created.
+      </returns>
+    </ConfirmReqMsg>
+  </members>
+</docs>

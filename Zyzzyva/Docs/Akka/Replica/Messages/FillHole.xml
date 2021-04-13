@@ -1,0 +1,41 @@
+﻿<docs>
+  <members name="fillhole">
+    <FillHole>
+      <summary>
+        The Message that contains a FillHole.
+      </summary>
+    </FillHole>
+    <View>
+      <summary>The <see cref="int"/> view number in which this fill holle message was sent.</summary>
+    </View>
+    <MaxSequenceNumber>
+      <summary>The <see cref="int"/> representing the sequence number of the request that triggered this FillHole.</summary>  
+    </MaxSequenceNumber>
+    <SequenceNumber>
+      <summary>The <see cref="int"/> representing the last sequence number present in the history of the replica that sent this FillHole.</summary>  
+    </SequenceNumber>
+    <ReplicaId>
+      <summary>The <see cref="int"/> the id of the replica that sent this FillHole.</summary>  
+    </ReplicaId>
+    <FillHoleMsg>
+      <summary>
+        Creates the FillHole Message.
+      </summary>
+      <param name="view">
+        <summary>The <see cref="int"/> view number of this fill hole message.</summary>
+      </param>
+      <param name="maxSequenceNumber">
+        <summary>The <see cref="int"/> maxSequenceNumber of this fill hole message.</summary>
+      </param>
+      <param name="sequenceNumber">
+        <summary>The <see cref="int"/> sequenceNumber of this fill hole message.</summary>
+      </param>
+      <param name="replicaId">
+        <summary>The <see cref="int"/>replicaId of this fill hole message.</summary>
+      </param>
+      <returns>
+        The FillHole Message created.
+      </returns>
+    </FillHoleMsg>
+  </members>
+</docs>

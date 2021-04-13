@@ -1,0 +1,43 @@
+﻿<docs>
+	<members name="specresponse">
+		<SpecResponse>
+			<summary>
+				This class represent an immutable message that allow comunicate from a replica to client,
+				when a replica execute the request in spoeculative way, so the replica response to client with this message that
+				contains all information to allow the client trustly of this response.
+			</summary>
+		</SpecResponse>
+		<SpecResponseC>
+			<summary>
+				Create an instance of this class that allow send this message to a client in the system.
+			</summary>
+			<param name="response">This parameter represent the response for a specific request <see cref="IRequest"></see>.</param>
+			<param name="orderReq">This parameter represent the portion signed of corrispondent order-req <see cref="OrderReqSigned"></see>.</param>
+			<param name="specResponse">This parameter represent tha portion signed of this message.</param>
+			<param name="orderSignature">This parameter represent last commit-certificate that contains this replica.</param>
+			<param name="signature">This parameter represent the signature for this message.</param>
+			<param name="replicaId">This parameter represent the identificator of a replica.</param>
+
+		</SpecResponseC>
+		<ReplicaId>
+			<summary>
+				This property represent an identified of a replica.
+			</summary>
+		</ReplicaId>
+		<OrderReqSigned>
+			<summary>
+				This property represent the signed portion of this message, the signed portion allow we holds a secured message when this is make<see cref="OrderReqSigned"></see>.
+		</summary>
+		</OrderReqSigned>
+		<SpecResponseSigned>
+			<summary>
+				This property represent the signed portion of this message, the signed portion allow we holds a secured message when this is make <see cref="SpecResponseSigned"></see>.
+			</summary>
+		</SpecResponseSigned>
+		<OrderReqSignature>
+			<summary>
+				This property represent a signed that can make for a replica that build this message.
+			</summary>
+		</OrderReqSignature>  
+</members>
+</docs>

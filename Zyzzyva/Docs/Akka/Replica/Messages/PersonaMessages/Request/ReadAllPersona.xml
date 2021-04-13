@@ -1,0 +1,18 @@
+﻿<docs>
+  <members name="readall">
+    <ReadAllPersona>
+      <summary>
+        The Message that contains the request to read all the personas in the db.
+      </summary>
+    </ReadAllPersona>
+    <ReadAllPersonaMsg>
+      <summary>
+        Creates the ReadAllPersona message.
+      </summary>
+      <returns>
+        The ReadAllPersona message.
+      </returns>
+    </ReadAllPersonaMsg>
+
+  </members>
+</docs>

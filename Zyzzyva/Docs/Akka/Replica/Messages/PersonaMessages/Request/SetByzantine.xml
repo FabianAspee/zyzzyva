@@ -1,0 +1,25 @@
+﻿<docs>
+  <members name="byzantine">
+    <SetByzantine>
+      <summary>
+        The Message that contains the request for a replica to become byzantine.
+      </summary>
+    </SetByzantine>
+    <Id>
+      <summary>
+        The <see cref="int"/> id of the replica to set byzantine.
+      </summary>
+    </Id>
+    <SetByzantine>
+      <summary>
+        Creates the SetByzantine message.
+      </summary>
+      <param name="id">
+        The <see cref="int"/> replica to set byzantine.
+      </param>
+      <returns>
+        The SetByzantine message.
+      </returns>
+    </SetByzantine>
+  </members>
+</docs>

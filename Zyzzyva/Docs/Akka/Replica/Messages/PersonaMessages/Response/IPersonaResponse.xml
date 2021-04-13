@@ -1,0 +1,9 @@
+﻿<docs>
+  <members name="iresponse">
+    <IPersonaResponse>
+      <summary>
+        Interface that represents a response after an operation on the Persona database.
+      </summary>
+    </IPersonaResponse>
+  </members>
+</docs>

@@ -1,0 +1,22 @@
+﻿<docs>
+	<members name="abstractsubscriber">
+		<AbstractSubscriber>
+			<summary>
+				The abstract class that allow implement the same method for various subscribers.
+			</summary>
+			<remarks>
+				can create IActorRef and CancellationTokenSource.
+			</remarks>
+			See <see cref="IActorRef"/>.
+			See <see cref="CancellationTokenSource"/>.
+		</AbstractSubscriber>
+		<IActorRef>
+			See <see cref="IActorRef"/>.
+		</IActorRef>
+		<Dispose>
+			<summary>
+				when app dead, this method allow kill actorClusterClient.
+			</summary>
+		</Dispose>
+	</members>
+</docs>
